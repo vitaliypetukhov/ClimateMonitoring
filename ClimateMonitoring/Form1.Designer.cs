@@ -73,11 +73,11 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(481, 230);
+            this.button1.Location = new System.Drawing.Point(353, 247);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 74);
+            this.button1.Size = new System.Drawing.Size(293, 38);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Обновить";
+            this.button1.Text = "Обновить данные";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -229,7 +229,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 12);
+            this.label5.Location = new System.Drawing.Point(9, 12);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 15);
             this.label5.TabIndex = 12;
@@ -455,9 +455,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(178, 314);
+            this.linkLabel1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.linkLabel1.Location = new System.Drawing.Point(155, 312);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(274, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(353, 14);
             this.linkLabel1.TabIndex = 38;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Copyright © Петухов В.А, 2021  Все права защищены";
@@ -467,7 +468,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 348);
+            this.ClientSize = new System.Drawing.Size(658, 335);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.SNPrilabel);
             this.Controls.Add(this.BatPrilabel);
@@ -506,6 +507,7 @@
             this.Controls.Add(this.ElTemplabel);
             this.Controls.Add(this.ELlabel1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Система мониторинга микроклимата помощений";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

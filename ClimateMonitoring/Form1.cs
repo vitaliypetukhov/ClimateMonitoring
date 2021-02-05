@@ -28,7 +28,7 @@ namespace ClimateMonitoring
                     );
                 SQLiteDataReader reader = command.ExecuteReader();
 
-                var allRecords = new StringBuilder();
+                //var allRecords = new StringBuilder();
 
                 ELlabel1.Text = null;
                 SNELlabel.Text = null;
@@ -42,7 +42,19 @@ namespace ClimateMonitoring
                     SNELlabel.Text += reader["EUI64"];
                     ElTemplabel.Text += reader["temperature"];
                     ElWetlabel.Text += reader["wetness"];
-                    ElBatlabel.Text += reader["battery"];
+                    ElBatlabel.Text += reader["battery"];                    
+
+                    bool test1 = ElBatlabel.Text.Substring(0, 1).Equals("1");
+                    if(test1 == true)
+                    {
+                        ElBatlabel.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        ElBatlabel.ForeColor = Color.Green;
+                    }
+
+                    
                 }
 
                 command = new SQLiteCommand
@@ -65,6 +77,16 @@ namespace ClimateMonitoring
                     FizhimTemplabel.Text += reader["temperature"];
                     FizhimWetlabel.Text += reader["wetness"];
                     FizhimBatlabel.Text += reader["battery"];
+
+                    bool test1 = FizhimBatlabel.Text.Substring(0, 1).Equals("1");
+                    if (test1 == true)
+                    {
+                        FizhimBatlabel.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        FizhimBatlabel.ForeColor = Color.Green;
+                    }
                 }
 
                 command = new SQLiteCommand
@@ -87,6 +109,16 @@ namespace ClimateMonitoring
                     PodTemplabel.Text += reader["temperature"];
                     PodWetlabel.Text += reader["wetness"];
                     PodBatlabel.Text += reader["battery"];
+
+                    bool test1 = PodBatlabel.Text.Substring(0, 1).Equals("1");
+                    if (test1 == true)
+                    {
+                        PodBatlabel.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        PodBatlabel.ForeColor = Color.Green;
+                    }
                 }
 
                 command = new SQLiteCommand
@@ -109,6 +141,16 @@ namespace ClimateMonitoring
                     ManTemplabel.Text += reader["temperature"];
                     ManWetlabel.Text += reader["wetness"];
                     ManBatlabel.Text += reader["battery"];
+
+                    bool test1 = ManBatlabel.Text.Substring(0, 1).Equals("1");
+                    if (test1 == true)
+                    {
+                        ManBatlabel.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        ManBatlabel.ForeColor = Color.Green;
+                    }
                 }
 
                 command = new SQLiteCommand
@@ -136,6 +178,16 @@ namespace ClimateMonitoring
                     TempTeplabel.Text += reader["temperature"];
                     WetTeplabel.Text += reader["wetness"];
                     BatTeplabel.Text += reader["battery"];
+
+                    bool test1 = BatTeplabel.Text.Substring(0, 1).Equals("1");
+                    if (test1 == true)
+                    {
+                        BatTeplabel.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        BatTeplabel.ForeColor = Color.Green;
+                    }
                 }
 
                 command = new SQLiteCommand
@@ -158,6 +210,16 @@ namespace ClimateMonitoring
                     TempPrilabel.Text += reader["temperature"];
                     WetPrilabel.Text += reader["wetness"];
                     BatPrilabel.Text += reader["battery"];
+
+                    bool test1 = BatPrilabel.Text.Substring(0, 1).Equals("1");
+                    if (test1 == true)
+                    {
+                        BatPrilabel.ForeColor = Color.Red;
+                    }
+                    else
+                    {
+                        BatPrilabel.ForeColor = Color.Green;
+                    }
                 }
 
                 connections.Close();
