@@ -89,6 +89,77 @@ namespace ClimateMonitoring
                     PodBatlabel.Text += reader["battery"];
                 }
 
+                command = new SQLiteCommand
+                 (
+                 "SELECT sensor_id, MAX(timemeasure) AS timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id = 5",
+                 connections
+                 );
+                reader = command.ExecuteReader();
+
+                Manlabel1.Text = null;
+                SNManlabel.Text = null;
+                ManTemplabel.Text = null;
+                ManWetlabel.Text = null;
+                ManBatlabel.Text = null;
+
+                while (reader.Read())
+                {
+                    Manlabel1.Text += reader["name"];
+                    SNManlabel.Text += reader["EUI64"];
+                    ManTemplabel.Text += reader["temperature"];
+                    ManWetlabel.Text += reader["wetness"];
+                    ManBatlabel.Text += reader["battery"];
+                }
+
+                command = new SQLiteCommand
+                 (
+                 "SELECT sensor_id, MAX(timemeasure) AS timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id = 8",
+                 connections
+                 );
+                reader = command.ExecuteReader();
+
+                Teplabel1.Text = null;
+                SNTeplabel.Text = null;
+                TempTeplabel.Text = null;
+                WetTeplabel.Text = null;
+                BatTeplabel.Text = null;
+
+                while (reader.Read())
+                {
+                    Teplabel1.Text += reader["name"];
+                    if(Teplabel1.Text == "теплотехника")
+                    {
+                        Teplabel1.Text = null;
+                        Teplabel1.Text += "Теплотехника";
+                    }
+                    SNTeplabel.Text += reader["EUI64"];
+                    TempTeplabel.Text += reader["temperature"];
+                    WetTeplabel.Text += reader["wetness"];
+                    BatTeplabel.Text += reader["battery"];
+                }
+
+                command = new SQLiteCommand
+                 (
+                 "SELECT sensor_id, MAX(timemeasure) AS timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id = 10",
+                 connections
+                 );
+                reader = command.ExecuteReader();
+
+                Prilabel1.Text = null;
+                SNPrilabel.Text = null;
+                TempPrilabel.Text = null;
+                WetPrilabel.Text = null;
+                BatPrilabel.Text = null;
+
+                while (reader.Read())
+                {
+                    Prilabel1.Text += reader["name"];
+                    SNPrilabel.Text += reader["EUI64"];
+                    TempPrilabel.Text += reader["temperature"];
+                    WetPrilabel.Text += reader["wetness"];
+                    BatPrilabel.Text += reader["battery"];
+                }
+
                 connections.Close();
             }
         }
@@ -162,6 +233,77 @@ namespace ClimateMonitoring
                     PodTemplabel.Text += reader["temperature"];
                     PodWetlabel.Text += reader["wetness"];
                     PodBatlabel.Text += reader["battery"];
+                }
+
+                command = new SQLiteCommand
+                 (
+                 "SELECT sensor_id, MAX(timemeasure) AS timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id = 5",
+                 connections
+                 );
+                reader = command.ExecuteReader();
+
+                Manlabel1.Text = null;
+                SNManlabel.Text = null;
+                ManTemplabel.Text = null;
+                ManWetlabel.Text = null;
+                ManBatlabel.Text = null;
+
+                while (reader.Read())
+                {
+                    Manlabel1.Text += reader["name"];
+                    SNManlabel.Text += reader["EUI64"];
+                    ManTemplabel.Text += reader["temperature"];
+                    ManWetlabel.Text += reader["wetness"];
+                    ManBatlabel.Text += reader["battery"];
+                }
+
+                command = new SQLiteCommand
+                 (
+                 "SELECT sensor_id, MAX(timemeasure) AS timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id = 8",
+                 connections
+                 );
+                reader = command.ExecuteReader();
+
+                Teplabel1.Text = null;
+                SNTeplabel.Text = null;
+                TempTeplabel.Text = null;
+                WetTeplabel.Text = null;
+                BatTeplabel.Text = null;
+
+                while (reader.Read())
+                {
+                    Teplabel1.Text += reader["name"];
+                    if (Teplabel1.Text == "теплотехника")
+                    {
+                        Teplabel1.Text = null;
+                        Teplabel1.Text += "Теплотехника";
+                    }
+                    SNTeplabel.Text += reader["EUI64"];
+                    TempTeplabel.Text += reader["temperature"];
+                    WetTeplabel.Text += reader["wetness"];
+                    BatTeplabel.Text += reader["battery"];
+                }
+
+                command = new SQLiteCommand
+                 (
+                 "SELECT sensor_id, MAX(timemeasure) AS timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id = 10",
+                 connections
+                 );
+                reader = command.ExecuteReader();
+
+                Prilabel1.Text = null;
+                SNPrilabel.Text = null;
+                TempPrilabel.Text = null;
+                WetPrilabel.Text = null;
+                BatPrilabel.Text = null;
+
+                while (reader.Read())
+                {
+                    Prilabel1.Text += reader["name"];
+                    SNPrilabel.Text += reader["EUI64"];
+                    TempPrilabel.Text += reader["temperature"];
+                    WetPrilabel.Text += reader["wetness"];
+                    BatPrilabel.Text += reader["battery"];
                 }
 
                 connections.Close();

@@ -51,21 +51,21 @@
             this.PodWetlabel = new System.Windows.Forms.Label();
             this.PodTemplabel = new System.Windows.Forms.Label();
             this.Podlabel1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.SNPrilabel = new System.Windows.Forms.Label();
+            this.BatPrilabel = new System.Windows.Forms.Label();
+            this.WetPrilabel = new System.Windows.Forms.Label();
+            this.TempPrilabel = new System.Windows.Forms.Label();
+            this.Prilabel1 = new System.Windows.Forms.Label();
+            this.SNTeplabel = new System.Windows.Forms.Label();
+            this.BatTeplabel = new System.Windows.Forms.Label();
+            this.WetTeplabel = new System.Windows.Forms.Label();
+            this.TempTeplabel = new System.Windows.Forms.Label();
+            this.Teplabel1 = new System.Windows.Forms.Label();
+            this.SNManlabel = new System.Windows.Forms.Label();
+            this.ManBatlabel = new System.Windows.Forms.Label();
+            this.ManWetlabel = new System.Windows.Forms.Label();
+            this.ManTemplabel = new System.Windows.Forms.Label();
+            this.Manlabel1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -189,11 +189,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Yi Baiti", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(169, 12);
+            this.label1.Location = new System.Drawing.Point(157, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 15);
+            this.label1.Size = new System.Drawing.Size(166, 15);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Серийный номер";
+            this.label1.Text = "Серийный номер датчика";
             // 
             // label2
             // 
@@ -296,161 +296,161 @@
             this.Podlabel1.TabIndex = 18;
             this.Podlabel1.Text = ".111";
             // 
-            // label6
+            // SNPrilabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(160, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 18);
-            this.label6.TabIndex = 37;
-            this.label6.Text = ".111";
+            this.SNPrilabel.AutoSize = true;
+            this.SNPrilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SNPrilabel.Location = new System.Drawing.Point(160, 197);
+            this.SNPrilabel.Name = "SNPrilabel";
+            this.SNPrilabel.Size = new System.Drawing.Size(40, 18);
+            this.SNPrilabel.TabIndex = 37;
+            this.SNPrilabel.Text = ".111";
             // 
-            // label7
+            // BatPrilabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(569, 196);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 18);
-            this.label7.TabIndex = 36;
-            this.label7.Text = ".111";
+            this.BatPrilabel.AutoSize = true;
+            this.BatPrilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BatPrilabel.Location = new System.Drawing.Point(569, 197);
+            this.BatPrilabel.Name = "BatPrilabel";
+            this.BatPrilabel.Size = new System.Drawing.Size(40, 18);
+            this.BatPrilabel.TabIndex = 36;
+            this.BatPrilabel.Text = ".111";
             // 
-            // label8
+            // WetPrilabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.ForeColor = System.Drawing.Color.Green;
-            this.label8.Location = new System.Drawing.Point(468, 196);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 18);
-            this.label8.TabIndex = 35;
-            this.label8.Text = ".111";
+            this.WetPrilabel.AutoSize = true;
+            this.WetPrilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WetPrilabel.ForeColor = System.Drawing.Color.Green;
+            this.WetPrilabel.Location = new System.Drawing.Point(468, 197);
+            this.WetPrilabel.Name = "WetPrilabel";
+            this.WetPrilabel.Size = new System.Drawing.Size(40, 18);
+            this.WetPrilabel.TabIndex = 35;
+            this.WetPrilabel.Text = ".111";
             // 
-            // label9
+            // TempPrilabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.ForeColor = System.Drawing.Color.Green;
-            this.label9.Location = new System.Drawing.Point(350, 196);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 18);
-            this.label9.TabIndex = 34;
-            this.label9.Text = ".111";
+            this.TempPrilabel.AutoSize = true;
+            this.TempPrilabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TempPrilabel.ForeColor = System.Drawing.Color.Green;
+            this.TempPrilabel.Location = new System.Drawing.Point(350, 197);
+            this.TempPrilabel.Name = "TempPrilabel";
+            this.TempPrilabel.Size = new System.Drawing.Size(40, 18);
+            this.TempPrilabel.TabIndex = 34;
+            this.TempPrilabel.Text = ".111";
             // 
-            // label10
+            // Prilabel1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(25, 196);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 18);
-            this.label10.TabIndex = 33;
-            this.label10.Text = ".111";
+            this.Prilabel1.AutoSize = true;
+            this.Prilabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Prilabel1.Location = new System.Drawing.Point(25, 197);
+            this.Prilabel1.Name = "Prilabel1";
+            this.Prilabel1.Size = new System.Drawing.Size(40, 18);
+            this.Prilabel1.TabIndex = 33;
+            this.Prilabel1.Text = ".111";
             // 
-            // label11
+            // SNTeplabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(160, 164);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 18);
-            this.label11.TabIndex = 32;
-            this.label11.Text = ".111";
+            this.SNTeplabel.AutoSize = true;
+            this.SNTeplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SNTeplabel.Location = new System.Drawing.Point(160, 165);
+            this.SNTeplabel.Name = "SNTeplabel";
+            this.SNTeplabel.Size = new System.Drawing.Size(40, 18);
+            this.SNTeplabel.TabIndex = 32;
+            this.SNTeplabel.Text = ".111";
             // 
-            // label12
+            // BatTeplabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(569, 164);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(40, 18);
-            this.label12.TabIndex = 31;
-            this.label12.Text = ".111";
+            this.BatTeplabel.AutoSize = true;
+            this.BatTeplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BatTeplabel.Location = new System.Drawing.Point(569, 165);
+            this.BatTeplabel.Name = "BatTeplabel";
+            this.BatTeplabel.Size = new System.Drawing.Size(40, 18);
+            this.BatTeplabel.TabIndex = 31;
+            this.BatTeplabel.Text = ".111";
             // 
-            // label13
+            // WetTeplabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.ForeColor = System.Drawing.Color.Green;
-            this.label13.Location = new System.Drawing.Point(468, 164);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(40, 18);
-            this.label13.TabIndex = 30;
-            this.label13.Text = ".111";
+            this.WetTeplabel.AutoSize = true;
+            this.WetTeplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WetTeplabel.ForeColor = System.Drawing.Color.Green;
+            this.WetTeplabel.Location = new System.Drawing.Point(468, 164);
+            this.WetTeplabel.Name = "WetTeplabel";
+            this.WetTeplabel.Size = new System.Drawing.Size(40, 18);
+            this.WetTeplabel.TabIndex = 30;
+            this.WetTeplabel.Text = ".111";
             // 
-            // label14
+            // TempTeplabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.Color.Green;
-            this.label14.Location = new System.Drawing.Point(350, 164);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(40, 18);
-            this.label14.TabIndex = 29;
-            this.label14.Text = ".111";
+            this.TempTeplabel.AutoSize = true;
+            this.TempTeplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TempTeplabel.ForeColor = System.Drawing.Color.Green;
+            this.TempTeplabel.Location = new System.Drawing.Point(350, 165);
+            this.TempTeplabel.Name = "TempTeplabel";
+            this.TempTeplabel.Size = new System.Drawing.Size(40, 18);
+            this.TempTeplabel.TabIndex = 29;
+            this.TempTeplabel.Text = ".111";
             // 
-            // label15
+            // Teplabel1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(25, 164);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 18);
-            this.label15.TabIndex = 28;
-            this.label15.Text = ".111";
+            this.Teplabel1.AutoSize = true;
+            this.Teplabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Teplabel1.Location = new System.Drawing.Point(25, 165);
+            this.Teplabel1.Name = "Teplabel1";
+            this.Teplabel1.Size = new System.Drawing.Size(40, 18);
+            this.Teplabel1.TabIndex = 28;
+            this.Teplabel1.Text = ".111";
             // 
-            // label16
+            // SNManlabel
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(160, 131);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 18);
-            this.label16.TabIndex = 27;
-            this.label16.Text = ".111";
+            this.SNManlabel.AutoSize = true;
+            this.SNManlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SNManlabel.Location = new System.Drawing.Point(160, 133);
+            this.SNManlabel.Name = "SNManlabel";
+            this.SNManlabel.Size = new System.Drawing.Size(40, 18);
+            this.SNManlabel.TabIndex = 27;
+            this.SNManlabel.Text = ".111";
             // 
-            // label17
+            // ManBatlabel
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(569, 131);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(40, 18);
-            this.label17.TabIndex = 26;
-            this.label17.Text = ".111";
+            this.ManBatlabel.AutoSize = true;
+            this.ManBatlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ManBatlabel.Location = new System.Drawing.Point(569, 133);
+            this.ManBatlabel.Name = "ManBatlabel";
+            this.ManBatlabel.Size = new System.Drawing.Size(40, 18);
+            this.ManBatlabel.TabIndex = 26;
+            this.ManBatlabel.Text = ".111";
             // 
-            // label18
+            // ManWetlabel
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.ForeColor = System.Drawing.Color.Green;
-            this.label18.Location = new System.Drawing.Point(468, 131);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(40, 18);
-            this.label18.TabIndex = 25;
-            this.label18.Text = ".111";
+            this.ManWetlabel.AutoSize = true;
+            this.ManWetlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ManWetlabel.ForeColor = System.Drawing.Color.Green;
+            this.ManWetlabel.Location = new System.Drawing.Point(468, 133);
+            this.ManWetlabel.Name = "ManWetlabel";
+            this.ManWetlabel.Size = new System.Drawing.Size(40, 18);
+            this.ManWetlabel.TabIndex = 25;
+            this.ManWetlabel.Text = ".111";
             // 
-            // label19
+            // ManTemplabel
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.ForeColor = System.Drawing.Color.Green;
-            this.label19.Location = new System.Drawing.Point(350, 131);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 18);
-            this.label19.TabIndex = 24;
-            this.label19.Text = ".111";
+            this.ManTemplabel.AutoSize = true;
+            this.ManTemplabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ManTemplabel.ForeColor = System.Drawing.Color.Green;
+            this.ManTemplabel.Location = new System.Drawing.Point(350, 133);
+            this.ManTemplabel.Name = "ManTemplabel";
+            this.ManTemplabel.Size = new System.Drawing.Size(40, 18);
+            this.ManTemplabel.TabIndex = 24;
+            this.ManTemplabel.Text = ".111";
             // 
-            // label20
+            // Manlabel1
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(25, 131);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(40, 18);
-            this.label20.TabIndex = 23;
-            this.label20.Text = ".111";
+            this.Manlabel1.AutoSize = true;
+            this.Manlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Manlabel1.Location = new System.Drawing.Point(25, 133);
+            this.Manlabel1.Name = "Manlabel1";
+            this.Manlabel1.Size = new System.Drawing.Size(40, 18);
+            this.Manlabel1.TabIndex = 23;
+            this.Manlabel1.Text = ".111";
             // 
             // linkLabel1
             // 
@@ -469,21 +469,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(658, 348);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.SNPrilabel);
+            this.Controls.Add(this.BatPrilabel);
+            this.Controls.Add(this.WetPrilabel);
+            this.Controls.Add(this.TempPrilabel);
+            this.Controls.Add(this.Prilabel1);
+            this.Controls.Add(this.SNTeplabel);
+            this.Controls.Add(this.BatTeplabel);
+            this.Controls.Add(this.WetTeplabel);
+            this.Controls.Add(this.TempTeplabel);
+            this.Controls.Add(this.Teplabel1);
+            this.Controls.Add(this.SNManlabel);
+            this.Controls.Add(this.ManBatlabel);
+            this.Controls.Add(this.ManWetlabel);
+            this.Controls.Add(this.ManTemplabel);
+            this.Controls.Add(this.Manlabel1);
             this.Controls.Add(this.SNPodlabel);
             this.Controls.Add(this.PodBatlabel);
             this.Controls.Add(this.PodWetlabel);
@@ -537,21 +537,21 @@
         private System.Windows.Forms.Label PodWetlabel;
         private System.Windows.Forms.Label PodTemplabel;
         private System.Windows.Forms.Label Podlabel1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label SNPrilabel;
+        private System.Windows.Forms.Label BatPrilabel;
+        private System.Windows.Forms.Label WetPrilabel;
+        private System.Windows.Forms.Label TempPrilabel;
+        private System.Windows.Forms.Label Prilabel1;
+        private System.Windows.Forms.Label SNTeplabel;
+        private System.Windows.Forms.Label BatTeplabel;
+        private System.Windows.Forms.Label WetTeplabel;
+        private System.Windows.Forms.Label TempTeplabel;
+        private System.Windows.Forms.Label Teplabel1;
+        private System.Windows.Forms.Label SNManlabel;
+        private System.Windows.Forms.Label ManBatlabel;
+        private System.Windows.Forms.Label ManWetlabel;
+        private System.Windows.Forms.Label ManTemplabel;
+        private System.Windows.Forms.Label Manlabel1;
         private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
