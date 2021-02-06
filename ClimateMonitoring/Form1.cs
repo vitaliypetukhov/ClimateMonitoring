@@ -19,8 +19,14 @@ namespace ClimateMonitoring
         {
             InitializeComponent();
 
+
             string path = @"\\WINSERVER\data\measurement.db3";
             string path1 = System.Environment.CurrentDirectory + @"\measurement.db3";
+
+            string info = File.GetLastWriteTime(path).ToString();
+            infolabel.Text = "Информация на " + info; 
+
+           // MessageBox.Show(File.GetLastWriteTime(path).ToString());
 
             FileInfo check = new FileInfo(path1);
             if(check.Exists)
@@ -73,8 +79,12 @@ namespace ClimateMonitoring
 
                         SNELlabel.Text += s2; //reader["EUI64"];
                         ElTemplabel.Text += reader["temperature"] + " °C";
-                        ElWetlabel.Text += reader["wetness"];
-                        ElBatlabel.Text += reader["battery"];
+                        ElWetlabel.Text += reader["wetness"] + " %";
+
+                        String s3 = reader["battery"].ToString();
+                        String s4 = s3.Substring(0, 4);
+
+                        ElBatlabel.Text += s4 + " V";// reader["battery"];
                     }
                     else if (reader["sensor_id"].ToString() == "3")
                     {
@@ -85,10 +95,18 @@ namespace ClimateMonitoring
                         FizhimBatlabel.Text = null;
 
                         Fizhimlabel1.Text += reader["name"];
-                        SNFizhimlabel.Text += reader["EUI64"];
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        SNFizhimlabel.Text += s2; // reader["EUI64"];
                         FizhimTemplabel.Text += reader["temperature"] + " °C";
-                        FizhimWetlabel.Text += reader["wetness"];
-                        FizhimBatlabel.Text += reader["battery"];
+                        FizhimWetlabel.Text += reader["wetness"] + " %";
+
+                        String s3 = reader["battery"].ToString();
+                        String s4 = s3.Substring(0, 4);
+
+                        FizhimBatlabel.Text += s4 + " V";// reader["battery"];
                     }
                     else if (reader["sensor_id"].ToString() == "4")
                     {
@@ -99,10 +117,18 @@ namespace ClimateMonitoring
                         PodBatlabel.Text = null;
 
                         Podlabel1.Text += reader["name"];
-                        SNPodlabel.Text += reader["EUI64"];
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        SNPodlabel.Text += s2; //reader["EUI64"];
                         PodTemplabel.Text += reader["temperature"] + " °C";
-                        PodWetlabel.Text += reader["wetness"];
-                        PodBatlabel.Text += reader["battery"];
+                        PodWetlabel.Text += reader["wetness"] + " %";
+
+                        String s3 = reader["battery"].ToString();
+                        String s4 = s3.Substring(0, 4);
+
+                        PodBatlabel.Text += s4 + " V";// reader["battery"];
                     }
                     else if (reader["sensor_id"].ToString() == "5")
                     {
@@ -113,10 +139,18 @@ namespace ClimateMonitoring
                         ManBatlabel.Text = null;
 
                         Manlabel1.Text += reader["name"];
-                        SNManlabel.Text += reader["EUI64"];
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        SNManlabel.Text += s2; // reader["EUI64"];
                         ManTemplabel.Text += reader["temperature"] + " °C";
-                        ManWetlabel.Text += reader["wetness"];
-                        ManBatlabel.Text += reader["battery"];
+                        ManWetlabel.Text += reader["wetness"] + " %";
+
+                        String s3 = reader["battery"].ToString();
+                        String s4 = s3.Substring(0, 4);
+
+                        ManBatlabel.Text += s4 + " V";// reader["battery"];
 
                     }
                     else if (reader["sensor_id"].ToString() == "8")
@@ -133,10 +167,18 @@ namespace ClimateMonitoring
                             Teplabel1.Text = null;
                             Teplabel1.Text += "Теплотехника";
                         }
-                        SNTeplabel.Text += reader["EUI64"];
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        SNTeplabel.Text += s2;// reader["EUI64"];
                         TempTeplabel.Text += reader["temperature"] + " °C";
-                        WetTeplabel.Text += reader["wetness"];
-                        BatTeplabel.Text += reader["battery"];
+                        WetTeplabel.Text += reader["wetness"] + " %";
+
+                        String s3 = reader["battery"].ToString();
+                        String s4 = s3.Substring(0, 4);
+
+                        BatTeplabel.Text += s4 + " V";// reader["battery"];
 
                     }
                     else if (reader["sensor_id"].ToString() == "10")
@@ -148,10 +190,18 @@ namespace ClimateMonitoring
                         BatPrilabel.Text = null;
 
                         Prilabel1.Text += reader["name"];
-                        SNPrilabel.Text += reader["EUI64"];
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        SNPrilabel.Text += s2;// reader["EUI64"];
                         TempPrilabel.Text += reader["temperature"] + " °C";
-                        WetPrilabel.Text += reader["wetness"];
-                        BatPrilabel.Text += reader["battery"];
+                        WetPrilabel.Text += reader["wetness"] + " %";
+
+                        String s3 = reader["battery"].ToString();
+                        String s4 = s3.Substring(0, 4);
+
+                        BatPrilabel.Text += s4 + " V";// reader["battery"];
                     }             
 
                 }
