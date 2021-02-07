@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using System.Globalization;
 
 namespace ClimateMonitoring
 {
@@ -38,9 +39,9 @@ namespace ClimateMonitoring
             {
                 File.Copy(path, path1, true);
             }
-            
-            //MessageBox.Show(path1);
 
+            //MessageBox.Show(path1);
+          
             using (SQLiteConnection connections = new SQLiteConnection(@"Data Source="+path1))
             {
                 connections.Open();
@@ -73,11 +74,17 @@ namespace ClimateMonitoring
                         ElWetlabel.Text = null;
                         ElBatlabel.Text = null;
 
-                        ELlabel1.Text += reader["name"];
+                        //MessageBox.Show(date.ToString());
+
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
-                        SNELlabel.Text += s2; //reader["EUI64"];
+                        ELlabel1.Text += reader["name"]+" ("+s2+")";
+                        
+                        int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                        DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                        SNELlabel.Text += date_last_update.ToString();
+
                         ElTemplabel.Text += reader["temperature"] + " °C";
                         ElWetlabel.Text += reader["wetness"] + " %";
 
@@ -94,12 +101,21 @@ namespace ClimateMonitoring
                         FizhimWetlabel.Text = null;
                         FizhimBatlabel.Text = null;
 
-                        Fizhimlabel1.Text += reader["name"];
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        Fizhimlabel1.Text += reader["name"] + " (" + s2 + ")";
+
+                        int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                        DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                        SNFizhimlabel.Text += date_last_update.ToString();
+
+                        /*Fizhimlabel1.Text += reader["name"];
 
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
-                        SNFizhimlabel.Text += s2; // reader["EUI64"];
+                        SNFizhimlabel.Text += s2; */
                         FizhimTemplabel.Text += reader["temperature"] + " °C";
                         FizhimWetlabel.Text += reader["wetness"] + " %";
 
@@ -116,12 +132,21 @@ namespace ClimateMonitoring
                         PodWetlabel.Text = null;
                         PodBatlabel.Text = null;
 
-                        Podlabel1.Text += reader["name"];
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        Podlabel1.Text += reader["name"] + " (" + s2 + ")";
+
+                        int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                        DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                        SNPodlabel.Text += date_last_update.ToString();
+
+                        /*Podlabel1.Text += reader["name"];
 
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
-                        SNPodlabel.Text += s2; //reader["EUI64"];
+                        SNPodlabel.Text += s2;*/
                         PodTemplabel.Text += reader["temperature"] + " °C";
                         PodWetlabel.Text += reader["wetness"] + " %";
 
@@ -138,12 +163,21 @@ namespace ClimateMonitoring
                         ManWetlabel.Text = null;
                         ManBatlabel.Text = null;
 
-                        Manlabel1.Text += reader["name"];
-
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
-                        SNManlabel.Text += s2; // reader["EUI64"];
+                        Manlabel1.Text += reader["name"] + " (" + s2 + ")";
+
+                        int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                        DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                        SNManlabel.Text += date_last_update.ToString();
+
+                        /* Manlabel1.Text += reader["name"];
+
+                         String s = reader["EUI64"].ToString();
+                         String s2 = s.Substring(s.Length - 7);
+
+                         SNManlabel.Text += s2; */
                         ManTemplabel.Text += reader["temperature"] + " °C";
                         ManWetlabel.Text += reader["wetness"] + " %";
 
@@ -161,7 +195,7 @@ namespace ClimateMonitoring
                         WetTeplabel.Text = null;
                         BatTeplabel.Text = null;
 
-                        Teplabel1.Text += reader["name"];
+                        /*Teplabel1.Text += reader["name"];
                         if (Teplabel1.Text == "теплотехника")
                         {
                             Teplabel1.Text = null;
@@ -171,7 +205,23 @@ namespace ClimateMonitoring
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
-                        SNTeplabel.Text += s2;// reader["EUI64"];
+                        SNTeplabel.Text += s2;*/
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        Teplabel1.Text += reader["name"];
+                        if (Teplabel1.Text == "теплотехника")
+                        {
+                            Teplabel1.Text = null;
+                            Teplabel1.Text += "Теплотехника" + " (" + s2 + ")";
+                        }
+                        
+
+                        int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                        DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                        SNTeplabel.Text += date_last_update.ToString();
+
                         TempTeplabel.Text += reader["temperature"] + " °C";
                         WetTeplabel.Text += reader["wetness"] + " %";
 
@@ -189,12 +239,22 @@ namespace ClimateMonitoring
                         WetPrilabel.Text = null;
                         BatPrilabel.Text = null;
 
-                        Prilabel1.Text += reader["name"];
+                        /*Prilabel1.Text += reader["name"];
 
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
-                        SNPrilabel.Text += s2;// reader["EUI64"];
+                        SNPrilabel.Text += s2;*/
+
+                        String s = reader["EUI64"].ToString();
+                        String s2 = s.Substring(s.Length - 7);
+
+                        Prilabel1.Text += reader["name"] + " (" + s2 + ")";
+
+                        int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                        DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                        SNPrilabel.Text += date_last_update.ToString();
+
                         TempPrilabel.Text += reader["temperature"] + " °C";
                         WetPrilabel.Text += reader["wetness"] + " %";
 
@@ -368,6 +428,8 @@ namespace ClimateMonitoring
         {
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/vitaliy-petukhov-206a3a156/");
         }
+
+        
     }
 }
 

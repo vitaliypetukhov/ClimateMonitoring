@@ -74,7 +74,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(491, 242);
+            this.button1.Location = new System.Drawing.Point(645, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 74);
             this.button1.TabIndex = 1;
@@ -86,7 +86,7 @@
             // 
             this.ELlabel1.AutoSize = true;
             this.ELlabel1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ELlabel1.Location = new System.Drawing.Point(17, 38);
+            this.ELlabel1.Location = new System.Drawing.Point(9, 38);
             this.ELlabel1.Name = "ELlabel1";
             this.ELlabel1.Size = new System.Drawing.Size(43, 18);
             this.ELlabel1.TabIndex = 2;
@@ -97,7 +97,7 @@
             this.ElTemplabel.AutoSize = true;
             this.ElTemplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ElTemplabel.ForeColor = System.Drawing.Color.Green;
-            this.ElTemplabel.Location = new System.Drawing.Point(302, 38);
+            this.ElTemplabel.Location = new System.Drawing.Point(419, 37);
             this.ElTemplabel.Name = "ElTemplabel";
             this.ElTemplabel.Size = new System.Drawing.Size(46, 18);
             this.ElTemplabel.TabIndex = 3;
@@ -108,7 +108,7 @@
             this.ElWetlabel.AutoSize = true;
             this.ElWetlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ElWetlabel.ForeColor = System.Drawing.Color.Green;
-            this.ElWetlabel.Location = new System.Drawing.Point(428, 38);
+            this.ElWetlabel.Location = new System.Drawing.Point(558, 38);
             this.ElWetlabel.Name = "ElWetlabel";
             this.ElWetlabel.Size = new System.Drawing.Size(46, 18);
             this.ElWetlabel.TabIndex = 4;
@@ -118,7 +118,7 @@
             // 
             this.ElBatlabel.AutoSize = true;
             this.ElBatlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ElBatlabel.Location = new System.Drawing.Point(537, 38);
+            this.ElBatlabel.Location = new System.Drawing.Point(686, 39);
             this.ElBatlabel.Name = "ElBatlabel";
             this.ElBatlabel.Size = new System.Drawing.Size(46, 18);
             this.ElBatlabel.TabIndex = 5;
@@ -128,7 +128,7 @@
             // 
             this.SNELlabel.AutoSize = true;
             this.SNELlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SNELlabel.Location = new System.Drawing.Point(160, 38);
+            this.SNELlabel.Location = new System.Drawing.Point(214, 39);
             this.SNELlabel.Name = "SNELlabel";
             this.SNELlabel.Size = new System.Drawing.Size(46, 18);
             this.SNELlabel.TabIndex = 6;
@@ -138,7 +138,7 @@
             // 
             this.SNFizhimlabel.AutoSize = true;
             this.SNFizhimlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SNFizhimlabel.Location = new System.Drawing.Point(160, 71);
+            this.SNFizhimlabel.Location = new System.Drawing.Point(214, 71);
             this.SNFizhimlabel.Name = "SNFizhimlabel";
             this.SNFizhimlabel.Size = new System.Drawing.Size(46, 18);
             this.SNFizhimlabel.TabIndex = 11;
@@ -148,7 +148,7 @@
             // 
             this.FizhimBatlabel.AutoSize = true;
             this.FizhimBatlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FizhimBatlabel.Location = new System.Drawing.Point(537, 71);
+            this.FizhimBatlabel.Location = new System.Drawing.Point(686, 72);
             this.FizhimBatlabel.Name = "FizhimBatlabel";
             this.FizhimBatlabel.Size = new System.Drawing.Size(46, 18);
             this.FizhimBatlabel.TabIndex = 10;
@@ -159,7 +159,7 @@
             this.FizhimWetlabel.AutoSize = true;
             this.FizhimWetlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FizhimWetlabel.ForeColor = System.Drawing.Color.Green;
-            this.FizhimWetlabel.Location = new System.Drawing.Point(428, 71);
+            this.FizhimWetlabel.Location = new System.Drawing.Point(558, 71);
             this.FizhimWetlabel.Name = "FizhimWetlabel";
             this.FizhimWetlabel.Size = new System.Drawing.Size(46, 18);
             this.FizhimWetlabel.TabIndex = 9;
@@ -170,7 +170,7 @@
             this.FizhimTemplabel.AutoSize = true;
             this.FizhimTemplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FizhimTemplabel.ForeColor = System.Drawing.Color.Green;
-            this.FizhimTemplabel.Location = new System.Drawing.Point(302, 71);
+            this.FizhimTemplabel.Location = new System.Drawing.Point(419, 69);
             this.FizhimTemplabel.Name = "FizhimTemplabel";
             this.FizhimTemplabel.Size = new System.Drawing.Size(46, 18);
             this.FizhimTemplabel.TabIndex = 8;
@@ -180,7 +180,7 @@
             // 
             this.Fizhimlabel1.AutoSize = true;
             this.Fizhimlabel1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.Fizhimlabel1.Location = new System.Drawing.Point(17, 71);
+            this.Fizhimlabel1.Location = new System.Drawing.Point(9, 71);
             this.Fizhimlabel1.Name = "Fizhimlabel1";
             this.Fizhimlabel1.Size = new System.Drawing.Size(43, 18);
             this.Fizhimlabel1.TabIndex = 7;
@@ -190,17 +190,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 14);
+            this.label1.Location = new System.Drawing.Point(214, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 14);
+            this.label1.Size = new System.Drawing.Size(99, 14);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Номер датчика";
+            this.label1.Text = "Дата (Время)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(528, 13);
+            this.label2.Location = new System.Drawing.Point(677, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 16);
             this.label2.TabIndex = 15;
@@ -210,7 +210,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(416, 13);
+            this.label3.Location = new System.Drawing.Point(558, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 16);
             this.label3.TabIndex = 14;
@@ -220,7 +220,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(287, 12);
+            this.label4.Location = new System.Drawing.Point(419, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 16);
             this.label4.TabIndex = 13;
@@ -232,9 +232,9 @@
             this.label5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(9, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 16);
+            this.label5.Size = new System.Drawing.Size(160, 16);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Местонахождение";
+            this.label5.Text = "Датчик (Сер.Номер)";
             // 
             // pictureBox1
             // 
@@ -249,7 +249,7 @@
             // 
             this.SNPodlabel.AutoSize = true;
             this.SNPodlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SNPodlabel.Location = new System.Drawing.Point(160, 103);
+            this.SNPodlabel.Location = new System.Drawing.Point(214, 103);
             this.SNPodlabel.Name = "SNPodlabel";
             this.SNPodlabel.Size = new System.Drawing.Size(46, 18);
             this.SNPodlabel.TabIndex = 22;
@@ -259,7 +259,7 @@
             // 
             this.PodBatlabel.AutoSize = true;
             this.PodBatlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PodBatlabel.Location = new System.Drawing.Point(537, 103);
+            this.PodBatlabel.Location = new System.Drawing.Point(686, 104);
             this.PodBatlabel.Name = "PodBatlabel";
             this.PodBatlabel.Size = new System.Drawing.Size(46, 18);
             this.PodBatlabel.TabIndex = 21;
@@ -270,7 +270,7 @@
             this.PodWetlabel.AutoSize = true;
             this.PodWetlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PodWetlabel.ForeColor = System.Drawing.Color.Green;
-            this.PodWetlabel.Location = new System.Drawing.Point(428, 103);
+            this.PodWetlabel.Location = new System.Drawing.Point(558, 103);
             this.PodWetlabel.Name = "PodWetlabel";
             this.PodWetlabel.Size = new System.Drawing.Size(46, 18);
             this.PodWetlabel.TabIndex = 20;
@@ -281,7 +281,7 @@
             this.PodTemplabel.AutoSize = true;
             this.PodTemplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PodTemplabel.ForeColor = System.Drawing.Color.Green;
-            this.PodTemplabel.Location = new System.Drawing.Point(302, 103);
+            this.PodTemplabel.Location = new System.Drawing.Point(419, 101);
             this.PodTemplabel.Name = "PodTemplabel";
             this.PodTemplabel.Size = new System.Drawing.Size(46, 18);
             this.PodTemplabel.TabIndex = 19;
@@ -291,7 +291,7 @@
             // 
             this.Podlabel1.AutoSize = true;
             this.Podlabel1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.Podlabel1.Location = new System.Drawing.Point(17, 103);
+            this.Podlabel1.Location = new System.Drawing.Point(9, 103);
             this.Podlabel1.Name = "Podlabel1";
             this.Podlabel1.Size = new System.Drawing.Size(43, 18);
             this.Podlabel1.TabIndex = 18;
@@ -301,7 +301,7 @@
             // 
             this.SNPrilabel.AutoSize = true;
             this.SNPrilabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SNPrilabel.Location = new System.Drawing.Point(160, 197);
+            this.SNPrilabel.Location = new System.Drawing.Point(214, 197);
             this.SNPrilabel.Name = "SNPrilabel";
             this.SNPrilabel.Size = new System.Drawing.Size(46, 18);
             this.SNPrilabel.TabIndex = 37;
@@ -311,7 +311,7 @@
             // 
             this.BatPrilabel.AutoSize = true;
             this.BatPrilabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BatPrilabel.Location = new System.Drawing.Point(537, 197);
+            this.BatPrilabel.Location = new System.Drawing.Point(686, 198);
             this.BatPrilabel.Name = "BatPrilabel";
             this.BatPrilabel.Size = new System.Drawing.Size(46, 18);
             this.BatPrilabel.TabIndex = 36;
@@ -322,7 +322,7 @@
             this.WetPrilabel.AutoSize = true;
             this.WetPrilabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WetPrilabel.ForeColor = System.Drawing.Color.Green;
-            this.WetPrilabel.Location = new System.Drawing.Point(428, 197);
+            this.WetPrilabel.Location = new System.Drawing.Point(558, 197);
             this.WetPrilabel.Name = "WetPrilabel";
             this.WetPrilabel.Size = new System.Drawing.Size(46, 18);
             this.WetPrilabel.TabIndex = 35;
@@ -333,7 +333,7 @@
             this.TempPrilabel.AutoSize = true;
             this.TempPrilabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TempPrilabel.ForeColor = System.Drawing.Color.Green;
-            this.TempPrilabel.Location = new System.Drawing.Point(302, 197);
+            this.TempPrilabel.Location = new System.Drawing.Point(419, 195);
             this.TempPrilabel.Name = "TempPrilabel";
             this.TempPrilabel.Size = new System.Drawing.Size(46, 18);
             this.TempPrilabel.TabIndex = 34;
@@ -343,7 +343,7 @@
             // 
             this.Prilabel1.AutoSize = true;
             this.Prilabel1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.Prilabel1.Location = new System.Drawing.Point(17, 197);
+            this.Prilabel1.Location = new System.Drawing.Point(9, 197);
             this.Prilabel1.Name = "Prilabel1";
             this.Prilabel1.Size = new System.Drawing.Size(43, 18);
             this.Prilabel1.TabIndex = 33;
@@ -353,7 +353,7 @@
             // 
             this.SNTeplabel.AutoSize = true;
             this.SNTeplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SNTeplabel.Location = new System.Drawing.Point(160, 165);
+            this.SNTeplabel.Location = new System.Drawing.Point(214, 165);
             this.SNTeplabel.Name = "SNTeplabel";
             this.SNTeplabel.Size = new System.Drawing.Size(46, 18);
             this.SNTeplabel.TabIndex = 32;
@@ -363,7 +363,7 @@
             // 
             this.BatTeplabel.AutoSize = true;
             this.BatTeplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BatTeplabel.Location = new System.Drawing.Point(537, 165);
+            this.BatTeplabel.Location = new System.Drawing.Point(686, 166);
             this.BatTeplabel.Name = "BatTeplabel";
             this.BatTeplabel.Size = new System.Drawing.Size(46, 18);
             this.BatTeplabel.TabIndex = 31;
@@ -374,7 +374,7 @@
             this.WetTeplabel.AutoSize = true;
             this.WetTeplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WetTeplabel.ForeColor = System.Drawing.Color.Green;
-            this.WetTeplabel.Location = new System.Drawing.Point(428, 164);
+            this.WetTeplabel.Location = new System.Drawing.Point(558, 164);
             this.WetTeplabel.Name = "WetTeplabel";
             this.WetTeplabel.Size = new System.Drawing.Size(46, 18);
             this.WetTeplabel.TabIndex = 30;
@@ -385,7 +385,7 @@
             this.TempTeplabel.AutoSize = true;
             this.TempTeplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TempTeplabel.ForeColor = System.Drawing.Color.Green;
-            this.TempTeplabel.Location = new System.Drawing.Point(302, 165);
+            this.TempTeplabel.Location = new System.Drawing.Point(419, 163);
             this.TempTeplabel.Name = "TempTeplabel";
             this.TempTeplabel.Size = new System.Drawing.Size(46, 18);
             this.TempTeplabel.TabIndex = 29;
@@ -395,7 +395,7 @@
             // 
             this.Teplabel1.AutoSize = true;
             this.Teplabel1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.Teplabel1.Location = new System.Drawing.Point(17, 165);
+            this.Teplabel1.Location = new System.Drawing.Point(9, 165);
             this.Teplabel1.Name = "Teplabel1";
             this.Teplabel1.Size = new System.Drawing.Size(43, 18);
             this.Teplabel1.TabIndex = 28;
@@ -405,7 +405,7 @@
             // 
             this.SNManlabel.AutoSize = true;
             this.SNManlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SNManlabel.Location = new System.Drawing.Point(160, 133);
+            this.SNManlabel.Location = new System.Drawing.Point(214, 133);
             this.SNManlabel.Name = "SNManlabel";
             this.SNManlabel.Size = new System.Drawing.Size(46, 18);
             this.SNManlabel.TabIndex = 27;
@@ -415,7 +415,7 @@
             // 
             this.ManBatlabel.AutoSize = true;
             this.ManBatlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ManBatlabel.Location = new System.Drawing.Point(537, 133);
+            this.ManBatlabel.Location = new System.Drawing.Point(686, 134);
             this.ManBatlabel.Name = "ManBatlabel";
             this.ManBatlabel.Size = new System.Drawing.Size(46, 18);
             this.ManBatlabel.TabIndex = 26;
@@ -426,7 +426,7 @@
             this.ManWetlabel.AutoSize = true;
             this.ManWetlabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ManWetlabel.ForeColor = System.Drawing.Color.Green;
-            this.ManWetlabel.Location = new System.Drawing.Point(428, 133);
+            this.ManWetlabel.Location = new System.Drawing.Point(558, 133);
             this.ManWetlabel.Name = "ManWetlabel";
             this.ManWetlabel.Size = new System.Drawing.Size(46, 18);
             this.ManWetlabel.TabIndex = 25;
@@ -437,7 +437,7 @@
             this.ManTemplabel.AutoSize = true;
             this.ManTemplabel.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ManTemplabel.ForeColor = System.Drawing.Color.Green;
-            this.ManTemplabel.Location = new System.Drawing.Point(302, 133);
+            this.ManTemplabel.Location = new System.Drawing.Point(419, 131);
             this.ManTemplabel.Name = "ManTemplabel";
             this.ManTemplabel.Size = new System.Drawing.Size(46, 18);
             this.ManTemplabel.TabIndex = 24;
@@ -447,7 +447,7 @@
             // 
             this.Manlabel1.AutoSize = true;
             this.Manlabel1.Font = new System.Drawing.Font("Verdana", 11.25F);
-            this.Manlabel1.Location = new System.Drawing.Point(17, 133);
+            this.Manlabel1.Location = new System.Drawing.Point(9, 133);
             this.Manlabel1.Name = "Manlabel1";
             this.Manlabel1.Size = new System.Drawing.Size(43, 18);
             this.Manlabel1.TabIndex = 23;
@@ -457,7 +457,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel1.Location = new System.Drawing.Point(155, 319);
+            this.linkLabel1.Location = new System.Drawing.Point(214, 323);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(353, 14);
             this.linkLabel1.TabIndex = 38;
@@ -469,7 +469,7 @@
             // 
             this.infolabel.AutoSize = true;
             this.infolabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.infolabel.Location = new System.Drawing.Point(167, 278);
+            this.infolabel.Location = new System.Drawing.Point(238, 272);
             this.infolabel.Name = "infolabel";
             this.infolabel.Size = new System.Drawing.Size(40, 16);
             this.infolabel.TabIndex = 39;
@@ -479,7 +479,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 335);
+            this.ClientSize = new System.Drawing.Size(812, 341);
             this.Controls.Add(this.infolabel);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.SNPrilabel);
