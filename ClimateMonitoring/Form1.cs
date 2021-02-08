@@ -25,9 +25,10 @@ namespace ClimateMonitoring
             string path1 = System.Environment.CurrentDirectory + @"\measurement.db3";
 
             string info = File.GetLastWriteTime(path).ToString();
-            infolabel.Text = "Информация на " + info; 
+            infolabel.Text = "Информация на " + info;
 
-           // MessageBox.Show(File.GetLastWriteTime(path).ToString());
+           // DateTime dateForButton = DateTime.Now.AddDays(-3);
+            //MessageBox.Show(dateForButton.ToString());
 
             FileInfo check = new FileInfo(path1);
            
@@ -84,6 +85,8 @@ namespace ClimateMonitoring
                         
                         int timestamp = Convert.ToInt32(reader["timemeasure"]);
                         DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+                                               
+
                         SNELlabel.Text += date_last_update.ToString();
 
                         ElTemplabel.Text += reader["temperature"] + " °C";
@@ -93,6 +96,31 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
 
                         ElBatlabel.Text += s4 + " V";// reader["battery"];
+
+                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        if (check_status > date_last_update)
+                        {
+                            ELlabel1.Text = null;
+                            SNELlabel.Text = null;
+                            ElTemplabel.Text = null;
+                            ElWetlabel.Text = null;
+                            ElBatlabel.Text = null;
+
+                            ELlabel1.Text += "NONE";
+                            SNELlabel.Text += "NONE";
+                            ElTemplabel.Text += "NONE";
+                            ElWetlabel.Text += "NONE";
+                            ElBatlabel.Text += "NONE";
+
+                            ELlabel1.ForeColor = Color.Red;
+                            SNELlabel.ForeColor = Color.Red;
+                            ElTemplabel.ForeColor = Color.Red;
+                            ElWetlabel.ForeColor = Color.Red;
+                            ElBatlabel.ForeColor = Color.Red;
+
+                            MessageBox.Show("Датчик [Электрики (4B70900)] не отвечает!\nЗамените батарейки в датчике!","ВНИМАНИЕ");
+
+                        }
                     }
                     else if (reader["sensor_id"].ToString() == "3")
                     {
@@ -124,6 +152,30 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
 
                         FizhimBatlabel.Text += s4 + " V";// reader["battery"];
+
+                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        if (check_status > date_last_update)
+                        {
+                            Fizhimlabel1.Text = null;
+                            SNFizhimlabel.Text = null;
+                            FizhimTemplabel.Text = null;
+                            FizhimWetlabel.Text = null;
+                            FizhimBatlabel.Text = null;
+
+                            Fizhimlabel1.Text += "NONE";
+                            SNFizhimlabel.Text += "NONE";
+                            FizhimTemplabel.Text += "NONE";
+                            FizhimWetlabel.Text += "NONE";
+                            FizhimBatlabel.Text += "NONE";
+
+                            Fizhimlabel1.ForeColor = Color.Red;
+                            SNFizhimlabel.ForeColor = Color.Red;
+                            FizhimTemplabel.ForeColor = Color.Red;
+                            FizhimWetlabel.ForeColor = Color.Red;
+                            FizhimBatlabel.ForeColor = Color.Red;
+
+                            MessageBox.Show("Датчик [Физ-химия (4AF798F)] не отвечает!\nЗамените батарейки в датчике!", "ВНИМАНИЕ");
+                        }
                     }
                     else if (reader["sensor_id"].ToString() == "4")
                     {
@@ -155,6 +207,30 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
 
                         PodBatlabel.Text += s4 + " V";
+
+                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        if (check_status > date_last_update)
+                        {
+                            Podlabel1.Text = null;
+                            SNPodlabel.Text = null;
+                            PodTemplabel.Text = null;
+                            PodWetlabel.Text = null;
+                            PodBatlabel.Text = null;
+
+                            Podlabel1.Text += "NONE";
+                            SNPodlabel.Text += "NONE";
+                            PodTemplabel.Text += "NONE";
+                            PodWetlabel.Text += "NONE";
+                            PodBatlabel.Text += "NONE";
+
+                            Podlabel1.ForeColor = Color.Red;
+                            SNPodlabel.ForeColor = Color.Red;
+                            PodTemplabel.ForeColor = Color.Red;
+                            PodWetlabel.ForeColor = Color.Red;
+                            PodBatlabel.ForeColor = Color.Red;
+
+                            MessageBox.Show("Датчик [Подвал (4B6FC97)] не отвечает!\nЗамените батарейки в датчике!", "ВНИМАНИЕ");
+                        }
                     }
                     else if (reader["sensor_id"].ToString() == "5")
                     {
@@ -186,6 +262,30 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
 
                         ManBatlabel.Text += s4 + " V";// reader["battery"];
+
+                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        if (check_status > date_last_update)
+                        {
+                            Manlabel1.Text = null;
+                            SNManlabel.Text = null;
+                            ManTemplabel.Text = null;
+                            ManWetlabel.Text = null;
+                            ManBatlabel.Text = null;
+
+                            Manlabel1.Text += "NONE";
+                            SNManlabel.Text += "NONE";
+                            ManTemplabel.Text += "NONE";
+                            ManWetlabel.Text += "NONE";
+                            ManBatlabel.Text += "NONE";
+
+                            Manlabel1.ForeColor = Color.Red;
+                            SNManlabel.ForeColor = Color.Red;
+                            ManTemplabel.ForeColor = Color.Red;
+                            ManWetlabel.ForeColor = Color.Red;
+                            ManBatlabel.ForeColor = Color.Red;
+
+                            MessageBox.Show("Датчик [Манометры (4B70ADC)] не отвечает!\nЗамените батарейки в датчике!", "ВНИМАНИЕ");
+                        }
 
                     }
                     else if (reader["sensor_id"].ToString() == "8")
@@ -231,6 +331,30 @@ namespace ClimateMonitoring
 
                         BatTeplabel.Text += s4 + " V";
 
+                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        if (check_status > date_last_update)
+                        {
+                            Teplabel1.Text = null;
+                            SNTeplabel.Text = null;
+                            TempTeplabel.Text = null;
+                            WetTeplabel.Text = null;
+                            BatTeplabel.Text = null;
+
+                            Teplabel1.Text += "NONE";
+                            SNTeplabel.Text += "NONE";
+                            TempTeplabel.Text += "NONE";
+                            WetTeplabel.Text += "NONE";
+                            BatTeplabel.Text += "NONE";
+
+                            Teplabel1.ForeColor = Color.Red;
+                            SNTeplabel.ForeColor = Color.Red;
+                            TempTeplabel.ForeColor = Color.Red;
+                            WetTeplabel.ForeColor = Color.Red;
+                            BatTeplabel.ForeColor = Color.Red;
+
+                            MessageBox.Show("Датчик [Теплотехника (4B709FD)] не отвечает!\nЗамените батарейки в датчике!", "ВНИМАНИЕ");
+                        }
+
                     }
                     else if (reader["sensor_id"].ToString() == "10")
                     {
@@ -263,12 +387,34 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
 
                         BatPrilabel.Text += s4 + " V";// reader["battery"];
+
+                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        if (check_status > date_last_update)
+                        {
+                            Prilabel1.Text = null;
+                            SNPrilabel.Text = null;
+                            TempPrilabel.Text = null;
+                            WetPrilabel.Text = null;
+                            BatPrilabel.Text = null;
+
+                            Prilabel1.Text += "NONE";
+                            SNPrilabel.Text += "NONE";
+                            TempPrilabel.Text += "NONE";
+                            WetPrilabel.Text += "NONE";
+                            BatPrilabel.Text += "NONE";
+
+                            Prilabel1.ForeColor = Color.Red;
+                            SNPrilabel.ForeColor = Color.Red;
+                            TempPrilabel.ForeColor = Color.Red;
+                            WetPrilabel.ForeColor = Color.Red;
+                            BatPrilabel.ForeColor = Color.Red;
+
+                            MessageBox.Show("Датчик [Приемка (4B707D0)] не отвечает!\nЗамените батарейки в датчике!", "ВНИМАНИЕ");
+                        }
                     }             
 
                 }
-
-                //File.Create(path1).Close();
-                
+                                                
                 connections.Close();
             }
         }
@@ -287,16 +433,12 @@ namespace ClimateMonitoring
             if (check.Exists)
             {
                // File.Delete(path1);
-                File.Copy(path, path1, true);
-                //File.Create(path1).Close();
+                File.Copy(path, path1, true);               
             }
             else
             {
                 File.Copy(path, path1, true);
-               // File.Create(path1).Close();
             }
-
-            //MessageBox.Show(path1);
 
             using (SQLiteConnection connections = new SQLiteConnection(@"Data Source=" + path1))
             {
