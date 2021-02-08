@@ -50,7 +50,7 @@ namespace ClimateMonitoring
             // DateTime dateForButton = DateTime.Now.AddDays(-3);
             /*DateTime currdate = DateTime.Now;
             int month = currdate.Month;
-            if(month == 1 || month == 2 || month == 3)
+            if(month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11|| month == 12)
             {
                 MessageBox.Show("+10");
             }*/
@@ -116,7 +116,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -182,7 +182,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {                            
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);                            
                             double wetnes_int = wetnes_int1 +10;
@@ -245,7 +245,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -308,7 +308,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -370,7 +370,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -432,7 +432,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -494,7 +494,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -562,7 +562,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -625,7 +625,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -687,7 +687,7 @@ namespace ClimateMonitoring
                         TempTeplabel.Text += reader["temperature"] + " °C";
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -756,7 +756,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -887,7 +887,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -953,7 +953,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1015,7 +1015,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1076,7 +1076,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1138,7 +1138,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1200,7 +1200,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1262,7 +1262,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1330,7 +1330,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1393,7 +1393,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1455,7 +1455,7 @@ namespace ClimateMonitoring
                         TempTeplabel.Text += reader["temperature"] + " °C";
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1524,7 +1524,7 @@ namespace ClimateMonitoring
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
-                        if (month == 1 || month == 2 || month == 3)
+                        if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
@@ -1578,8 +1578,8 @@ namespace ClimateMonitoring
 
         private void Otdelcombo_SelectionChangeCommitted(object sender, EventArgs e)
         {
-
-            if(Otdelcombo.SelectedIndex == 0)
+            //if(month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11|| month == 12)
+            if (Otdelcombo.SelectedIndex == 0)
             {
                 string path = @"\\WINSERVER\data\measurement.db3";
                 string path1 = System.Environment.CurrentDirectory + @"\measurement.db3";
