@@ -68,6 +68,7 @@
             this.Manlabel1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.infolabel = new System.Windows.Forms.Label();
+            this.Otdelcombo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -469,17 +470,31 @@
             // 
             this.infolabel.AutoSize = true;
             this.infolabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.infolabel.Location = new System.Drawing.Point(238, 272);
+            this.infolabel.Location = new System.Drawing.Point(233, 290);
             this.infolabel.Name = "infolabel";
             this.infolabel.Size = new System.Drawing.Size(40, 16);
             this.infolabel.TabIndex = 39;
             this.infolabel.Text = ".111";
+            // 
+            // Otdelcombo
+            // 
+            this.Otdelcombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Otdelcombo.FormattingEnabled = true;
+            this.Otdelcombo.Items.AddRange(new object[] {
+            "Отдел электромагнитных и теплотехнических измерений",
+            "Отдел механических и линейно-угловых измерений"});
+            this.Otdelcombo.Location = new System.Drawing.Point(217, 253);
+            this.Otdelcombo.Name = "Otdelcombo";
+            this.Otdelcombo.Size = new System.Drawing.Size(350, 21);
+            this.Otdelcombo.TabIndex = 40;
+            this.Otdelcombo.SelectionChangeCommitted += new System.EventHandler(this.Otdelcombo_SelectionChangeCommitted);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 341);
+            this.Controls.Add(this.Otdelcombo);
             this.Controls.Add(this.infolabel);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.SNPrilabel);
@@ -568,6 +583,7 @@
         private System.Windows.Forms.Label Manlabel1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label infolabel;
+        private System.Windows.Forms.ComboBox Otdelcombo;
     }
 }
 
