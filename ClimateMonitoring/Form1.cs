@@ -114,6 +114,16 @@ namespace ClimateMonitoring
 
                         ElTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ElTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ElTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -180,6 +190,16 @@ namespace ClimateMonitoring
 
                         ElTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {                            
+                            ElTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ElTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -192,7 +212,6 @@ namespace ClimateMonitoring
                         {
                             ElWetlabel.Text += reader["wetness"] + " %";
                         }
-
 
                         String s3 = reader["battery"].ToString();
                         String s4 = s3.Substring(0, 4);
@@ -242,6 +261,16 @@ namespace ClimateMonitoring
                         SNFizhimlabel.Text += date_last_update.ToString();
 
                         FizhimTemplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            FizhimTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            FizhimTemplabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -306,6 +335,16 @@ namespace ClimateMonitoring
                                                 
                         FizhimTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            FizhimTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            FizhimTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -367,6 +406,16 @@ namespace ClimateMonitoring
                         SNPodlabel.Text += date_last_update.ToString();
                                                
                         PodTemplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            PodTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            PodTemplabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -430,6 +479,16 @@ namespace ClimateMonitoring
                                                 
                         PodTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            PodTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            PodTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -491,6 +550,16 @@ namespace ClimateMonitoring
                         SNManlabel.Text += date_last_update.ToString();
 
                         ManTemplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ManTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ManTemplabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -560,6 +629,16 @@ namespace ClimateMonitoring
 
                         ManTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ManTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ManTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -623,6 +702,16 @@ namespace ClimateMonitoring
 
                         TempTeplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            TempTeplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            TempTeplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -685,6 +774,17 @@ namespace ClimateMonitoring
                         SNTeplabel.Text += date_last_update.ToString();
 
                         TempTeplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            TempTeplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            TempTeplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -753,6 +853,16 @@ namespace ClimateMonitoring
                         SNPrilabel.Text += date_last_update.ToString();
 
                         TempPrilabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            TempPrilabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            TempPrilabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -885,6 +995,16 @@ namespace ClimateMonitoring
 
                         ElTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ElTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ElTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -951,6 +1071,16 @@ namespace ClimateMonitoring
 
                         ElTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ElTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ElTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1013,6 +1143,16 @@ namespace ClimateMonitoring
 
                         FizhimTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            FizhimTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            FizhimTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1073,6 +1213,16 @@ namespace ClimateMonitoring
                         SNFizhimlabel.Text += date_last_update.ToString();
 
                         FizhimTemplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            FizhimTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            FizhimTemplabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -1136,6 +1286,16 @@ namespace ClimateMonitoring
 
                         PodTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            PodTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            PodTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1198,6 +1358,16 @@ namespace ClimateMonitoring
 
                         PodTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.00 && temp < 25.00)
+                        {
+                            PodTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            PodTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1259,6 +1429,16 @@ namespace ClimateMonitoring
                         SNManlabel.Text += date_last_update.ToString();
 
                         ManTemplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ManTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ManTemplabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -1328,6 +1508,16 @@ namespace ClimateMonitoring
 
                         ManTemplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            ManTemplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            ManTemplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1391,6 +1581,16 @@ namespace ClimateMonitoring
 
                         TempTeplabel.Text += reader["temperature"] + " °C";
 
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            TempTeplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            TempTeplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1453,6 +1653,17 @@ namespace ClimateMonitoring
                         SNTeplabel.Text += date_last_update.ToString();
 
                         TempTeplabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            TempTeplabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            TempTeplabel.ForeColor = Color.Red;
+                        }
+
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
@@ -1521,6 +1732,16 @@ namespace ClimateMonitoring
                         SNPrilabel.Text += date_last_update.ToString();
 
                         TempPrilabel.Text += reader["temperature"] + " °C";
+
+                        double temp = Convert.ToDouble(reader["temperature"]);
+                        if (temp > 15.0 && temp < 25.0)
+                        {
+                            TempPrilabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            TempPrilabel.ForeColor = Color.Red;
+                        }
 
                         DateTime currdate = DateTime.Now;
                         int month = currdate.Month;
@@ -1640,9 +1861,19 @@ namespace ClimateMonitoring
 
                             ElTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                ElTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -1702,9 +1933,19 @@ namespace ClimateMonitoring
 
                             FizhimTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                FizhimTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -1763,9 +2004,19 @@ namespace ClimateMonitoring
 
                             PodTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                PodTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -1831,9 +2082,19 @@ namespace ClimateMonitoring
 
                             ManTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                ManTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -1893,9 +2154,20 @@ namespace ClimateMonitoring
                             SNTeplabel.Text += date_last_update.ToString();
 
                             TempTeplabel.Text += reader["temperature"] + " °C";
+
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                TempTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                TempTeplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -2002,9 +2274,19 @@ namespace ClimateMonitoring
 
                             ElTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                ElTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -2065,9 +2347,19 @@ namespace ClimateMonitoring
 
                             FizhimTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                FizhimTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -2127,9 +2419,19 @@ namespace ClimateMonitoring
 
                             PodTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                PodTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -2189,9 +2491,19 @@ namespace ClimateMonitoring
 
                             ManTemplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                ManTemplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManTemplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -2251,9 +2563,19 @@ namespace ClimateMonitoring
 
                             TempTeplabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                TempTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                TempTeplabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
@@ -2320,9 +2642,19 @@ namespace ClimateMonitoring
 
                             TempPrilabel.Text += reader["temperature"] + " °C";
 
+                            double temp = Convert.ToDouble(reader["temperature"]);
+                            if (temp > 15.0 && temp < 25.0)
+                            {
+                                TempPrilabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                TempPrilabel.ForeColor = Color.Red;
+                            }
+
                             DateTime currdate = DateTime.Now;
                             int month = currdate.Month;
-                            if (month == 1 || month == 2 || month == 3)
+                            if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                             {
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
