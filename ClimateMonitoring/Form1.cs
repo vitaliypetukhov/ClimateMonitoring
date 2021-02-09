@@ -47,13 +47,7 @@ namespace ClimateMonitoring
             string info = File.GetLastWriteTime(path).ToString();
             infolabel.Text = "Информация на " + info;
 
-            // DateTime dateForButton = DateTime.Now.AddDays(-3);
-            /*DateTime currdate = DateTime.Now;
-            int month = currdate.Month;
-            if(month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11|| month == 12)
-            {
-                MessageBox.Show("+10");
-            }*/
+            //DateTime dateForButton = DateTime.Now.AddDays(-3);           
             //MessageBox.Show(month.ToString());
 
             FileInfo check = new FileInfo(path1);
@@ -67,9 +61,7 @@ namespace ClimateMonitoring
             {
                 File.Copy(path, path1, true);                
             }
-
-            //MessageBox.Show(path1);
-          
+                      
             using (SQLiteConnection connections = new SQLiteConnection(@"Data Source="+path1))
             {
                 connections.Open();
@@ -93,15 +85,12 @@ namespace ClimateMonitoring
                     }
                     //Пенал (4B702D7)
                     if (reader["sensor_id"].ToString() == "1" && Otdelcombo.SelectedIndex == 1)
-                    {
-                        //MessageBox.Show("111");
+                    {                        
                         ELlabel1.Text = null;
                         SNELlabel.Text = null;
                         ElTemplabel.Text = null;
                         ElWetlabel.Text = null;
                         ElBatlabel.Text = null;
-
-                        //MessageBox.Show(date.ToString());
 
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
@@ -131,10 +120,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ElWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ElWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -177,8 +185,6 @@ namespace ClimateMonitoring
                         ElWetlabel.Text = null;
                         ElBatlabel.Text = null;
 
-                        //MessageBox.Show(date.ToString());
-
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
 
@@ -204,13 +210,33 @@ namespace ClimateMonitoring
                         int month = currdate.Month;
                         if (month == 1 || month == 2 || month == 3 || month == 4 || month == 10 || month == 11 || month == 12)
                         {                            
-                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);                            
-                            double wetnes_int = wetnes_int1 +10;
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            double wetnes_int = wetnes_int1 + 10;
+
                             ElWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if(wetnes_int>30.0 && wetnes_int<80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else 
                         {
                             ElWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1>30.0 && wetnes_int1<80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -279,13 +305,30 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             FizhimWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             FizhimWetlabel.Text += reader["wetness"] + " %";
-                        }
 
-                        
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
+                        }                        
 
                         String s3 = reader["battery"].ToString();
                         String s4 = s3.Substring(0, 4);
@@ -352,12 +395,30 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             FizhimWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             FizhimWetlabel.Text += reader["wetness"] + " %";
-                        }
-                        
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
+                        }                        
 
                         String s3 = reader["battery"].ToString();
                         String s4 = s3.Substring(0, 4);
@@ -424,10 +485,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             PodWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             PodWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }                        
 
                         String s3 = reader["battery"].ToString();
@@ -496,12 +576,31 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             PodWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             PodWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
-                        
+
                         String s3 = reader["battery"].ToString();
                         String s4 = s3.Substring(0, 4);
 
@@ -568,10 +667,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ManWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ManWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }                        
 
                         String s3 = reader["battery"].ToString();
@@ -646,10 +764,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ManWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ManWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -719,10 +856,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             WetTeplabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }                        
 
                         String s3 = reader["battery"].ToString();
@@ -792,10 +948,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             WetTeplabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -871,10 +1046,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             WetPrilabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                WetPrilabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetPrilabel.ForeColor = Color.Red;
+                            }
                         }
                         
 
@@ -934,17 +1128,7 @@ namespace ClimateMonitoring
             using (SQLiteConnection connections = new SQLiteConnection(@"Data Source=" + path1))
             {
                 connections.Open();
-                /*
-                 bool test1 = PodBatlabel.Text.Substring(0, 1).Equals("1");
-                    if (test1 == true)
-                    {
-                        PodBatlabel.ForeColor = Color.Red;
-                    }
-                    else
-                    {
-                        PodBatlabel.ForeColor = Color.Green;
-                    }
-                */
+                
                 if (Otdelcombo.SelectedIndex == 0)
                 {
                     Prilabel1.Visible = false;
@@ -1012,10 +1196,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ElWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ElWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1050,15 +1253,12 @@ namespace ClimateMonitoring
                     }
                     //Электрики (4B70900)
                     else if (reader["sensor_id"].ToString() == "2" && Otdelcombo.SelectedIndex == 0)
-                    {
-                        //MessageBox.Show("111");
+                    {                        
                         ELlabel1.Text = null;
                         SNELlabel.Text = null;
                         ElTemplabel.Text = null;
                         ElWetlabel.Text = null;
                         ElBatlabel.Text = null;
-
-                        //MessageBox.Show(date.ToString());
 
                         String s = reader["EUI64"].ToString();
                         String s2 = s.Substring(s.Length - 7);
@@ -1088,10 +1288,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ElWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ElWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ElWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ElWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1160,10 +1379,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             FizhimWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             FizhimWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1231,12 +1469,30 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             FizhimWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             FizhimWetlabel.Text += reader["wetness"] + " %";
-                        }
 
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                FizhimWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                FizhimWetlabel.ForeColor = Color.Red;
+                            }
+                        }
 
                         String s3 = reader["battery"].ToString();
                         String s4 = s3.Substring(0, 4);
@@ -1303,10 +1559,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             PodWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             PodWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1375,10 +1650,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             PodWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             PodWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                PodWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                PodWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1447,10 +1741,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ManWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ManWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1525,10 +1838,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             ManWetlabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             ManWetlabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                ManWetlabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                ManWetlabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1598,10 +1930,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             WetTeplabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1671,10 +2022,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             WetTeplabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                WetTeplabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetTeplabel.ForeColor = Color.Red;
+                            }
                         }
 
                         String s3 = reader["battery"].ToString();
@@ -1750,10 +2120,29 @@ namespace ClimateMonitoring
                             double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                             double wetnes_int = wetnes_int1 + 10;
                             WetPrilabel.Text += wetnes_int.ToString() + " %";
+
+                            if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                            {
+                                WetPrilabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetPrilabel.ForeColor = Color.Red;
+                            }
                         }
                         else
                         {
                             WetPrilabel.Text += reader["wetness"] + " %";
+
+                            double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                            if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                            {
+                                WetPrilabel.ForeColor = Color.Green;
+                            }
+                            else
+                            {
+                                WetPrilabel.ForeColor = Color.Red;
+                            }
                         }
 
 
@@ -1841,14 +2230,11 @@ namespace ClimateMonitoring
                         //Электрики (4B70900)
                          if (reader["sensor_id"].ToString() == "2" && Otdelcombo.SelectedIndex == 0)
                         {
-                            //MessageBox.Show("111");
                             ELlabel1.Text = null;
                             SNELlabel.Text = null;
                             ElTemplabel.Text = null;
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
-
-                            //MessageBox.Show(date.ToString());
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -1878,10 +2264,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 ElWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    ElWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ElWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 ElWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    ElWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ElWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -1950,10 +2355,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 FizhimWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 FizhimWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2021,10 +2445,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 PodWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    PodWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    PodWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 PodWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    PodWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    PodWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2099,10 +2542,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 ManWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    ManWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ManWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 ManWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    ManWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ManWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2172,10 +2634,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    WetTeplabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    WetTeplabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 WetTeplabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    WetTeplabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    WetTeplabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2254,14 +2735,11 @@ namespace ClimateMonitoring
                         //Пенал (4B702D7)
                         if (reader["sensor_id"].ToString() == "1" && Otdelcombo.SelectedIndex == 1)
                         {
-                            //MessageBox.Show("111");
                             ELlabel1.Text = null;
                             SNELlabel.Text = null;
                             ElTemplabel.Text = null;
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
-
-                            //MessageBox.Show(date.ToString());
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -2291,10 +2769,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 ElWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    ElWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ElWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 ElWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    ElWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ElWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2364,10 +2861,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 FizhimWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 FizhimWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    FizhimWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
 
@@ -2436,10 +2952,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 PodWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    PodWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    PodWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 PodWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    PodWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    PodWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2508,10 +3043,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 ManWetlabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    ManWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ManWetlabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 ManWetlabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    ManWetlabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    ManWetlabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2580,10 +3134,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 WetTeplabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    WetTeplabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    WetTeplabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 WetTeplabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    WetTeplabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    WetTeplabel.ForeColor = Color.Red;
+                                }
                             }
 
                             String s3 = reader["battery"].ToString();
@@ -2659,10 +3232,29 @@ namespace ClimateMonitoring
                                 double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
                                 double wetnes_int = wetnes_int1 + 10;
                                 WetPrilabel.Text += wetnes_int.ToString() + " %";
+
+                                if (wetnes_int > 30.0 && wetnes_int < 80.0)
+                                {
+                                    WetPrilabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    WetPrilabel.ForeColor = Color.Red;
+                                }
                             }
                             else
                             {
                                 WetPrilabel.Text += reader["wetness"] + " %";
+
+                                double wetnes_int1 = Convert.ToDouble(reader["wetness"]);
+                                if (wetnes_int1 > 30.0 && wetnes_int1 < 80.0)
+                                {
+                                    WetPrilabel.ForeColor = Color.Green;
+                                }
+                                else
+                                {
+                                    WetPrilabel.ForeColor = Color.Red;
+                                }
                             }
 
 
@@ -2701,6 +3293,19 @@ namespace ClimateMonitoring
             }
         }
 
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                //устанавливает флаг отмены события в истину
+                e.Cancel = true;
+                //спрашивает стоит ли завершится
+                if (MessageBox.Show("Вы уверены что хотите закрыть программу?", "Система мониторинга микроклимата помощений", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
+        }
     }
 }
 
