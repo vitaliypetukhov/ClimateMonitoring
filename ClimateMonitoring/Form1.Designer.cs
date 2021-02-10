@@ -69,7 +69,22 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.infolabel = new System.Windows.Forms.Label();
             this.Otdelcombo = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ViewGrid_main = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.date_otchet = new System.Windows.Forms.DateTimePicker();
+            this.date_otchet2 = new System.Windows.Forms.DateTimePicker();
+            this.combo_otch_datchik = new System.Windows.Forms.ComboBox();
+            this.sensor_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timemeasure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.temperature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wetness = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.battery = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EUI64 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewGrid_main)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -489,11 +504,141 @@
             this.Otdelcombo.TabIndex = 40;
             this.Otdelcombo.SelectionChangeCommitted += new System.EventHandler(this.Otdelcombo_SelectionChangeCommitted);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(645, 315);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(150, 23);
+            this.button2.TabIndex = 41;
+            this.button2.Text = "Отчет";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ViewGrid_main
+            // 
+            this.ViewGrid_main.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ViewGrid_main.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sensor_id,
+            this.timemeasure,
+            this.temperature,
+            this.wetness,
+            this.battery,
+            this.name,
+            this.EUI64});
+            this.ViewGrid_main.Location = new System.Drawing.Point(0, 0);
+            this.ViewGrid_main.Name = "ViewGrid_main";
+            this.ViewGrid_main.Size = new System.Drawing.Size(811, 236);
+            this.ViewGrid_main.TabIndex = 42;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(645, 293);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 23);
+            this.button3.TabIndex = 43;
+            this.button3.Text = "Закрыть отчет";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(645, 243);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(150, 47);
+            this.button4.TabIndex = 44;
+            this.button4.Text = "Сформировать отчет";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // date_otchet
+            // 
+            this.date_otchet.Location = new System.Drawing.Point(217, 254);
+            this.date_otchet.Name = "date_otchet";
+            this.date_otchet.Size = new System.Drawing.Size(173, 20);
+            this.date_otchet.TabIndex = 45;
+            // 
+            // date_otchet2
+            // 
+            this.date_otchet2.Location = new System.Drawing.Point(394, 254);
+            this.date_otchet2.Name = "date_otchet2";
+            this.date_otchet2.Size = new System.Drawing.Size(173, 20);
+            this.date_otchet2.TabIndex = 46;
+            // 
+            // combo_otch_datchik
+            // 
+            this.combo_otch_datchik.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_otch_datchik.FormattingEnabled = true;
+            this.combo_otch_datchik.Items.AddRange(new object[] {
+            "Пенал (4B702D7)",
+            "Электрики (4B70900)",
+            "Физ-химия (4AF798F)",
+            "Подвал (4B6FС97)",
+            "Манометры (4B70ADC)",
+            "Мерники (4B6E621)",
+            "Весы (4B6FB5A)",
+            "Теплотехника (4B709FD)",
+            "Механики (4B6FBA5)",
+            "Приемка (4B707D0)",
+            "Линейно-угловые (4B70245)"});
+            this.combo_otch_datchik.Location = new System.Drawing.Point(217, 284);
+            this.combo_otch_datchik.Name = "combo_otch_datchik";
+            this.combo_otch_datchik.Size = new System.Drawing.Size(350, 21);
+            this.combo_otch_datchik.TabIndex = 47;
+            // 
+            // sensor_id
+            // 
+            this.sensor_id.HeaderText = "Пор. Номер";
+            this.sensor_id.Name = "sensor_id";
+            this.sensor_id.Width = 90;
+            // 
+            // timemeasure
+            // 
+            this.timemeasure.HeaderText = "Дата и время";
+            this.timemeasure.Name = "timemeasure";
+            this.timemeasure.Width = 110;
+            // 
+            // temperature
+            // 
+            this.temperature.HeaderText = "Температура";
+            this.temperature.Name = "temperature";
+            this.temperature.Width = 90;
+            // 
+            // wetness
+            // 
+            this.wetness.HeaderText = "Влажность";
+            this.wetness.Name = "wetness";
+            this.wetness.Width = 90;
+            // 
+            // battery
+            // 
+            this.battery.HeaderText = "Заряд батареи";
+            this.battery.Name = "battery";
+            this.battery.Width = 110;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Название датчика";
+            this.name.Name = "name";
+            this.name.Width = 127;
+            // 
+            // EUI64
+            // 
+            this.EUI64.HeaderText = "Сер. Номер";
+            this.EUI64.Name = "EUI64";
+            this.EUI64.Width = 150;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 341);
+            this.Controls.Add(this.combo_otch_datchik);
+            this.Controls.Add(this.date_otchet2);
+            this.Controls.Add(this.date_otchet);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.ViewGrid_main);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.Otdelcombo);
             this.Controls.Add(this.infolabel);
             this.Controls.Add(this.linkLabel1);
@@ -541,6 +686,7 @@
             this.Text = "Система мониторинга микроклимата помощений";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ViewGrid_main)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -587,6 +733,20 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label infolabel;
         private System.Windows.Forms.ComboBox Otdelcombo;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView ViewGrid_main;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DateTimePicker date_otchet;
+        private System.Windows.Forms.DateTimePicker date_otchet2;
+        private System.Windows.Forms.ComboBox combo_otch_datchik;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sensor_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn timemeasure;
+        private System.Windows.Forms.DataGridViewTextBoxColumn temperature;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wetness;
+        private System.Windows.Forms.DataGridViewTextBoxColumn battery;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EUI64;
     }
 }
 

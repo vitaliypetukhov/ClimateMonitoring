@@ -20,6 +20,15 @@ namespace ClimateMonitoring
         {
             InitializeComponent();
 
+            ViewGrid_main.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+
+            date_otchet.Visible = false;
+            date_otchet2.Visible = false;
+
+            combo_otch_datchik.Visible = false;
+
             Otdelcombo.SelectedIndex = 0;
 
             if (Otdelcombo.SelectedIndex == 0)
@@ -54,7 +63,7 @@ namespace ClimateMonitoring
            
             if(check.Exists)
             {
-                File.Delete(path1);
+                //File.Delete(path1);
                 File.Copy(path, path1, true);               
             }
             else
@@ -3305,6 +3314,198 @@ namespace ClimateMonitoring
                     Application.Exit();
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Text = "Система мониторинга микроклимата помощений (формирование отчета)";
+
+            date_otchet.Visible = true;
+            date_otchet2.Visible = true;
+            combo_otch_datchik.Visible = true;
+
+            date_otchet.Format = DateTimePickerFormat.Custom;
+            date_otchet.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+
+            date_otchet2.Format = DateTimePickerFormat.Custom;
+            date_otchet2.CustomFormat = "dd/MM/yyyy hh:mm:ss";
+
+
+            button3.Visible = true;
+            button4.Visible = true;
+
+            ViewGrid_main.Visible = true;
+            button1.Visible = false;
+            button2.Visible = false;
+            Otdelcombo.Visible = false;
+            infolabel.Visible = false;
+
+            ELlabel1.Visible = false;
+            Fizhimlabel1.Visible = false;
+            Podlabel1.Visible = false;
+            Manlabel1.Visible = false;
+            Teplabel1.Visible = false;
+            Prilabel1.Visible = false;
+            label5.Visible = false;
+
+            label1.Visible = false;
+            SNELlabel.Visible = false;
+            SNFizhimlabel.Visible = false;
+            SNPodlabel.Visible = false;
+            SNManlabel.Visible = false;
+            SNTeplabel.Visible = false;
+            SNPrilabel.Visible = false;
+
+            label4.Visible = false;
+            ElTemplabel.Visible = false;
+            FizhimTemplabel.Visible = false;
+            PodTemplabel.Visible = false;
+            ManTemplabel.Visible = false;
+            TempTeplabel.Visible = false;
+            TempPrilabel.Visible = false;
+
+            label3.Visible = false;
+            ElWetlabel.Visible = false;
+            FizhimWetlabel.Visible = false;
+            PodWetlabel.Visible = false;
+            ManWetlabel.Visible = false;
+            WetTeplabel.Visible = false;
+            WetPrilabel.Visible = false;
+
+            label2.Visible = false;
+            ElBatlabel.Visible = false;
+            FizhimBatlabel.Visible = false;
+            PodBatlabel.Visible = false;
+            ManBatlabel.Visible = false;
+            BatTeplabel.Visible = false;
+            BatPrilabel.Visible = false;            
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Text = "Система мониторинга микроклимата помощений (отдел ЭМиТТИ)";
+
+            ViewGrid_main.Visible = false;
+            button1.Visible = true;
+            button2.Visible = true;
+            Otdelcombo.Visible = true;
+            infolabel.Visible = true;
+
+            ELlabel1.Visible = true;
+            Fizhimlabel1.Visible = true;
+            Podlabel1.Visible = true;
+            Manlabel1.Visible = true;
+            Teplabel1.Visible = true;
+            Prilabel1.Visible = false;
+            label5.Visible = true;
+
+            label1.Visible = true;
+            SNELlabel.Visible = true;
+            SNFizhimlabel.Visible = true;
+            SNPodlabel.Visible = true;
+            SNManlabel.Visible = true;
+            SNTeplabel.Visible = true;
+            SNPrilabel.Visible = false;
+
+            label4.Visible = true;
+            ElTemplabel.Visible = true;
+            FizhimTemplabel.Visible = true;
+            PodTemplabel.Visible = true;
+            ManTemplabel.Visible = true;
+            TempTeplabel.Visible = true;
+            TempPrilabel.Visible = false;
+
+            label3.Visible = true;
+            ElWetlabel.Visible = true;
+            FizhimWetlabel.Visible = true;
+            PodWetlabel.Visible = true;
+            ManWetlabel.Visible = true;
+            WetTeplabel.Visible = true;
+            WetPrilabel.Visible = false;
+
+            label2.Visible = true;
+            ElBatlabel.Visible = true;
+            FizhimBatlabel.Visible = true;
+            PodBatlabel.Visible = true;
+            ManBatlabel.Visible = true;
+            BatTeplabel.Visible = true;
+            BatPrilabel.Visible = false;
+
+            button4.Visible = false;
+            button3.Visible = false;
+
+            date_otchet.Visible = false;
+            date_otchet2.Visible = false;
+            combo_otch_datchik.Visible = false;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(combo_otch_datchik.Text))
+            {
+                MessageBox.Show("Не выбран датчик для создания отчета");
+            }
+            else
+            {
+                ViewGrid_main.Rows.Clear();
+
+                DateTime date = date_otchet.Value;
+                DateTime dt1970 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+
+                TimeSpan tsInterval = date.Subtract(dt1970);
+                Int32 iSeconds = Convert.ToInt32(tsInterval.TotalSeconds);
+                iSeconds = iSeconds - 1;
+                //MessageBox.Show(date.ToString()+" ->"+iSeconds.ToString());
+
+                DateTime date_2 = date_otchet2.Value;
+                DateTime dt1970_2 = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+
+                TimeSpan tsInterval_2 = date_2.Subtract(dt1970_2);
+                Int32 iSeconds_2 = Convert.ToInt32(tsInterval_2.TotalSeconds);
+                iSeconds_2 = iSeconds_2 - 1;
+                //MessageBox.Show(date.ToString() + " ->" + iSeconds.ToString()+"\n"+date_2.ToString() + " ->" + iSeconds_2.ToString());
+
+                Int32 comboindex = combo_otch_datchik.SelectedIndex;
+                comboindex += 1;
+
+                //MessageBox.Show("index ->"+ comboindex);
+
+                string path1 = System.Environment.CurrentDirectory + @"\measurement.db3";
+
+
+                using (SQLiteConnection connections = new SQLiteConnection(@"Data Source=" + path1))
+                {
+                    connections.Open();
+                    SQLiteCommand command = new SQLiteCommand
+                    (
+                    "SELECT sensor_id, timemeasure, temperature, wetness, battery, name, EUI64 FROM measure, sensors WHERE sensors.id = sensor_id AND sensor_id =" + comboindex + " AND timemeasure >" +
+                    iSeconds.ToString() + " AND timemeasure <" + iSeconds_2.ToString() + ";",
+                    connections
+                    );
+
+                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            ViewGrid_main.Rows.Add(new object[]
+                            {
+                                reader.GetValue(reader.GetOrdinal("sensor_id")),
+                                reader.GetValue(reader.GetOrdinal("timemeasure")),
+                                reader.GetValue(reader.GetOrdinal("temperature")),
+                                reader.GetValue(reader.GetOrdinal("wetness")),
+                                reader.GetValue(reader.GetOrdinal("battery")),
+                                reader.GetValue(reader.GetOrdinal("name")),
+                                reader.GetValue(reader.GetOrdinal("EUI64"))
+                            });
+                        }
+                    }
+
+                }
+
+            }
+            
         }
     }
 }
