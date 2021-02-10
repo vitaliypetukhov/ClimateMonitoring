@@ -159,22 +159,22 @@ namespace ClimateMonitoring
 
                         ElBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            ELlabel1.Text = null;
+                            //ELlabel1.Text = null;
                             SNELlabel.Text = null;
                             ElTemplabel.Text = null;
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
 
-                            ELlabel1.Text += "NONE";
+                            //ELlabel1.Text += "NONE";
                             SNELlabel.Text += "NONE";
                             ElTemplabel.Text += "NONE";
                             ElWetlabel.Text += "NONE";
                             ElBatlabel.Text += "NONE";
 
-                            ELlabel1.ForeColor = Color.Red;
+                            //ELlabel1.ForeColor = Color.Red;
                             SNELlabel.ForeColor = Color.Red;
                             ElTemplabel.ForeColor = Color.Red;
                             ElWetlabel.ForeColor = Color.Red;
@@ -253,22 +253,22 @@ namespace ClimateMonitoring
 
                         ElBatlabel.Text += s4 + " V";// reader["battery"];
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            ELlabel1.Text = null;
+                            //ELlabel1.Text = null;
                             SNELlabel.Text = null;
                             ElTemplabel.Text = null;
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
 
-                            ELlabel1.Text += "NONE";
+                            //ELlabel1.Text += "NONE";
                             SNELlabel.Text += "NONE";
                             ElTemplabel.Text += "NONE";
                             ElWetlabel.Text += "NONE";
                             ElBatlabel.Text += "NONE";
 
-                            ELlabel1.ForeColor = Color.Red;
+                            //ELlabel1.ForeColor = Color.Red;
                             SNELlabel.ForeColor = Color.Red;
                             ElTemplabel.ForeColor = Color.Red;
                             ElWetlabel.ForeColor = Color.Red;
@@ -343,22 +343,22 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
                         FizhimBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Fizhimlabel1.Text = null;
+                            //Fizhimlabel1.Text = null;
                             SNFizhimlabel.Text = null;
                             FizhimTemplabel.Text = null;
                             FizhimWetlabel.Text = null;
                             FizhimBatlabel.Text = null;
 
-                            Fizhimlabel1.Text += "NONE";
+                            //Fizhimlabel1.Text += "NONE";
                             SNFizhimlabel.Text += "NONE";
                             FizhimTemplabel.Text += "NONE";
                             FizhimWetlabel.Text += "NONE";
                             FizhimBatlabel.Text += "NONE";
 
-                            Fizhimlabel1.ForeColor = Color.Red;
+                            //Fizhimlabel1.ForeColor = Color.Red;
                             SNFizhimlabel.ForeColor = Color.Red;
                             FizhimTemplabel.ForeColor = Color.Red;
                             FizhimWetlabel.ForeColor = Color.Red;
@@ -433,22 +433,22 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
                         FizhimBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Fizhimlabel1.Text = null;
+                           // Fizhimlabel1.Text = null;
                             SNFizhimlabel.Text = null;
                             FizhimTemplabel.Text = null;
                             FizhimWetlabel.Text = null;
                             FizhimBatlabel.Text = null;
 
-                            Fizhimlabel1.Text += "NONE";
+                            //Fizhimlabel1.Text += "NONE";
                             SNFizhimlabel.Text += "NONE";
                             FizhimTemplabel.Text += "NONE";
                             FizhimWetlabel.Text += "NONE";
                             FizhimBatlabel.Text += "NONE";
 
-                            Fizhimlabel1.ForeColor = Color.Red;
+                           // Fizhimlabel1.ForeColor = Color.Red;
                             SNFizhimlabel.ForeColor = Color.Red;
                             FizhimTemplabel.ForeColor = Color.Red;
                             FizhimWetlabel.ForeColor = Color.Red;
@@ -524,22 +524,22 @@ namespace ClimateMonitoring
 
                         PodBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Podlabel1.Text = null;
+                            //Podlabel1.Text = null;
                             SNPodlabel.Text = null;
                             PodTemplabel.Text = null;
                             PodWetlabel.Text = null;
                             PodBatlabel.Text = null;
 
-                            Podlabel1.Text += "NONE";
+                            //Podlabel1.Text += "NONE";
                             SNPodlabel.Text += "NONE";
                             PodTemplabel.Text += "NONE";
                             PodWetlabel.Text += "NONE";
                             PodBatlabel.Text += "NONE";
 
-                            Podlabel1.ForeColor = Color.Red;
+                            //Podlabel1.ForeColor = Color.Red;
                             SNPodlabel.ForeColor = Color.Red;
                             PodTemplabel.ForeColor = Color.Red;
                             PodWetlabel.ForeColor = Color.Red;
@@ -615,22 +615,22 @@ namespace ClimateMonitoring
 
                         PodBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Podlabel1.Text = null;
+                            //Podlabel1.Text = null;
                             SNPodlabel.Text = null;
                             PodTemplabel.Text = null;
                             PodWetlabel.Text = null;
                             PodBatlabel.Text = null;
 
-                            Podlabel1.Text += "NONE";
+                           // Podlabel1.Text += "NONE";
                             SNPodlabel.Text += "NONE";
                             PodTemplabel.Text += "NONE";
                             PodWetlabel.Text += "NONE";
                             PodBatlabel.Text += "NONE";
 
-                            Podlabel1.ForeColor = Color.Red;
+                            //Podlabel1.ForeColor = Color.Red;
                             SNPodlabel.ForeColor = Color.Red;
                             PodTemplabel.ForeColor = Color.Red;
                             PodWetlabel.ForeColor = Color.Red;
@@ -706,22 +706,22 @@ namespace ClimateMonitoring
 
                         ManBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Manlabel1.Text = null;
+                            //Manlabel1.Text = null;
                             SNManlabel.Text = null;
                             ManTemplabel.Text = null;
                             ManWetlabel.Text = null;
                             ManBatlabel.Text = null;
 
-                            Manlabel1.Text += "NONE";
+                            //Manlabel1.Text += "NONE";
                             SNManlabel.Text += "NONE";
                             ManTemplabel.Text += "NONE";
                             ManWetlabel.Text += "NONE";
                             ManBatlabel.Text += "NONE";
 
-                            Manlabel1.ForeColor = Color.Red;
+                            //Manlabel1.ForeColor = Color.Red;
                             SNManlabel.ForeColor = Color.Red;
                             ManTemplabel.ForeColor = Color.Red;
                             ManWetlabel.ForeColor = Color.Red;
@@ -803,22 +803,22 @@ namespace ClimateMonitoring
 
                         ManBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Manlabel1.Text = null;
+                            //Manlabel1.Text = null;
                             SNManlabel.Text = null;
                             ManTemplabel.Text = null;
                             ManWetlabel.Text = null;
                             ManBatlabel.Text = null;
 
-                            Manlabel1.Text += "NONE";
+                            //Manlabel1.Text += "NONE";
                             SNManlabel.Text += "NONE";
                             ManTemplabel.Text += "NONE";
                             ManWetlabel.Text += "NONE";
                             ManBatlabel.Text += "NONE";
 
-                            Manlabel1.ForeColor = Color.Red;
+                           // Manlabel1.ForeColor = Color.Red;
                             SNManlabel.ForeColor = Color.Red;
                             ManTemplabel.ForeColor = Color.Red;
                             ManWetlabel.ForeColor = Color.Red;
@@ -895,22 +895,22 @@ namespace ClimateMonitoring
 
                         BatTeplabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Teplabel1.Text = null;
+                           // Teplabel1.Text = null;
                             SNTeplabel.Text = null;
                             TempTeplabel.Text = null;
                             WetTeplabel.Text = null;
                             BatTeplabel.Text = null;
 
-                            Teplabel1.Text += "NONE";
+                           // Teplabel1.Text += "NONE";
                             SNTeplabel.Text += "NONE";
                             TempTeplabel.Text += "NONE";
                             WetTeplabel.Text += "NONE";
                             BatTeplabel.Text += "NONE";
 
-                            Teplabel1.ForeColor = Color.Red;
+                          //  Teplabel1.ForeColor = Color.Red;
                             SNTeplabel.ForeColor = Color.Red;
                             TempTeplabel.ForeColor = Color.Red;
                             WetTeplabel.ForeColor = Color.Red;
@@ -987,22 +987,22 @@ namespace ClimateMonitoring
 
                         BatTeplabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Teplabel1.Text = null;
+                            //Teplabel1.Text = null;
                             SNTeplabel.Text = null;
                             TempTeplabel.Text = null;
                             WetTeplabel.Text = null;
                             BatTeplabel.Text = null;
 
-                            Teplabel1.Text += "NONE";
+                           // Teplabel1.Text += "NONE";
                             SNTeplabel.Text += "NONE";
                             TempTeplabel.Text += "NONE";
                             WetTeplabel.Text += "NONE";
                             BatTeplabel.Text += "NONE";
 
-                            Teplabel1.ForeColor = Color.Red;
+                           // Teplabel1.ForeColor = Color.Red;
                             SNTeplabel.ForeColor = Color.Red;
                             TempTeplabel.ForeColor = Color.Red;
                             WetTeplabel.ForeColor = Color.Red;
@@ -1086,22 +1086,22 @@ namespace ClimateMonitoring
 
                         BatPrilabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Prilabel1.Text = null;
+                           // Prilabel1.Text = null;
                             SNPrilabel.Text = null;
                             TempPrilabel.Text = null;
                             WetPrilabel.Text = null;
                             BatPrilabel.Text = null;
 
-                            Prilabel1.Text += "NONE";
+                           // Prilabel1.Text += "NONE";
                             SNPrilabel.Text += "NONE";
                             TempPrilabel.Text += "NONE";
                             WetPrilabel.Text += "NONE";
                             BatPrilabel.Text += "NONE";
 
-                            Prilabel1.ForeColor = Color.Red;
+                           // Prilabel1.ForeColor = Color.Red;
                             SNPrilabel.ForeColor = Color.Red;
                             TempPrilabel.ForeColor = Color.Red;
                             WetPrilabel.ForeColor = Color.Red;
@@ -1235,22 +1235,22 @@ namespace ClimateMonitoring
 
                         ElBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            ELlabel1.Text = null;
+                           // ELlabel1.Text = null;
                             SNELlabel.Text = null;
                             ElTemplabel.Text = null;
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
 
-                            ELlabel1.Text += "NONE";
+                           // ELlabel1.Text += "NONE";
                             SNELlabel.Text += "NONE";
                             ElTemplabel.Text += "NONE";
                             ElWetlabel.Text += "NONE";
                             ElBatlabel.Text += "NONE";
 
-                            ELlabel1.ForeColor = Color.Red;
+                           // ELlabel1.ForeColor = Color.Red;
                             SNELlabel.ForeColor = Color.Red;
                             ElTemplabel.ForeColor = Color.Red;
                             ElWetlabel.ForeColor = Color.Red;
@@ -1327,22 +1327,22 @@ namespace ClimateMonitoring
 
                         ElBatlabel.Text += s4 + " V";// reader["battery"];
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            ELlabel1.Text = null;
+                           // ELlabel1.Text = null;
                             SNELlabel.Text = null;
                             ElTemplabel.Text = null;
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
 
-                            ELlabel1.Text += "NONE";
+                           // ELlabel1.Text += "NONE";
                             SNELlabel.Text += "NONE";
                             ElTemplabel.Text += "NONE";
                             ElWetlabel.Text += "NONE";
                             ElBatlabel.Text += "NONE";
 
-                            ELlabel1.ForeColor = Color.Red;
+                           // ELlabel1.ForeColor = Color.Red;
                             SNELlabel.ForeColor = Color.Red;
                             ElTemplabel.ForeColor = Color.Red;
                             ElWetlabel.ForeColor = Color.Red;
@@ -1417,22 +1417,22 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
                         FizhimBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Fizhimlabel1.Text = null;
+                           // Fizhimlabel1.Text = null;
                             SNFizhimlabel.Text = null;
                             FizhimTemplabel.Text = null;
                             FizhimWetlabel.Text = null;
                             FizhimBatlabel.Text = null;
 
-                            Fizhimlabel1.Text += "NONE";
+                           // Fizhimlabel1.Text += "NONE";
                             SNFizhimlabel.Text += "NONE";
                             FizhimTemplabel.Text += "NONE";
                             FizhimWetlabel.Text += "NONE";
                             FizhimBatlabel.Text += "NONE";
 
-                            Fizhimlabel1.ForeColor = Color.Red;
+                           // Fizhimlabel1.ForeColor = Color.Red;
                             SNFizhimlabel.ForeColor = Color.Red;
                             FizhimTemplabel.ForeColor = Color.Red;
                             FizhimWetlabel.ForeColor = Color.Red;
@@ -1507,22 +1507,22 @@ namespace ClimateMonitoring
                         String s4 = s3.Substring(0, 4);
                         FizhimBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Fizhimlabel1.Text = null;
+                           // Fizhimlabel1.Text = null;
                             SNFizhimlabel.Text = null;
                             FizhimTemplabel.Text = null;
                             FizhimWetlabel.Text = null;
                             FizhimBatlabel.Text = null;
 
-                            Fizhimlabel1.Text += "NONE";
+                          //  Fizhimlabel1.Text += "NONE";
                             SNFizhimlabel.Text += "NONE";
                             FizhimTemplabel.Text += "NONE";
                             FizhimWetlabel.Text += "NONE";
                             FizhimBatlabel.Text += "NONE";
 
-                            Fizhimlabel1.ForeColor = Color.Red;
+                           // Fizhimlabel1.ForeColor = Color.Red;
                             SNFizhimlabel.ForeColor = Color.Red;
                             FizhimTemplabel.ForeColor = Color.Red;
                             FizhimWetlabel.ForeColor = Color.Red;
@@ -1598,22 +1598,22 @@ namespace ClimateMonitoring
 
                         PodBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Podlabel1.Text = null;
+                          //  Podlabel1.Text = null;
                             SNPodlabel.Text = null;
                             PodTemplabel.Text = null;
                             PodWetlabel.Text = null;
                             PodBatlabel.Text = null;
 
-                            Podlabel1.Text += "NONE";
+                          //  Podlabel1.Text += "NONE";
                             SNPodlabel.Text += "NONE";
                             PodTemplabel.Text += "NONE";
                             PodWetlabel.Text += "NONE";
                             PodBatlabel.Text += "NONE";
 
-                            Podlabel1.ForeColor = Color.Red;
+                          //  Podlabel1.ForeColor = Color.Red;
                             SNPodlabel.ForeColor = Color.Red;
                             PodTemplabel.ForeColor = Color.Red;
                             PodWetlabel.ForeColor = Color.Red;
@@ -1689,22 +1689,22 @@ namespace ClimateMonitoring
 
                         PodBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Podlabel1.Text = null;
+                           // Podlabel1.Text = null;
                             SNPodlabel.Text = null;
                             PodTemplabel.Text = null;
                             PodWetlabel.Text = null;
                             PodBatlabel.Text = null;
 
-                            Podlabel1.Text += "NONE";
+                           // Podlabel1.Text += "NONE";
                             SNPodlabel.Text += "NONE";
                             PodTemplabel.Text += "NONE";
                             PodWetlabel.Text += "NONE";
                             PodBatlabel.Text += "NONE";
 
-                            Podlabel1.ForeColor = Color.Red;
+                           // Podlabel1.ForeColor = Color.Red;
                             SNPodlabel.ForeColor = Color.Red;
                             PodTemplabel.ForeColor = Color.Red;
                             PodWetlabel.ForeColor = Color.Red;
@@ -1780,22 +1780,22 @@ namespace ClimateMonitoring
 
                         ManBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Manlabel1.Text = null;
+                           // Manlabel1.Text = null;
                             SNManlabel.Text = null;
                             ManTemplabel.Text = null;
                             ManWetlabel.Text = null;
                             ManBatlabel.Text = null;
 
-                            Manlabel1.Text += "NONE";
+                           // Manlabel1.Text += "NONE";
                             SNManlabel.Text += "NONE";
                             ManTemplabel.Text += "NONE";
                             ManWetlabel.Text += "NONE";
                             ManBatlabel.Text += "NONE";
 
-                            Manlabel1.ForeColor = Color.Red;
+                           // Manlabel1.ForeColor = Color.Red;
                             SNManlabel.ForeColor = Color.Red;
                             ManTemplabel.ForeColor = Color.Red;
                             ManWetlabel.ForeColor = Color.Red;
@@ -1877,22 +1877,22 @@ namespace ClimateMonitoring
 
                         ManBatlabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Manlabel1.Text = null;
+                          //  Manlabel1.Text = null;
                             SNManlabel.Text = null;
                             ManTemplabel.Text = null;
                             ManWetlabel.Text = null;
                             ManBatlabel.Text = null;
 
-                            Manlabel1.Text += "NONE";
+                          //  Manlabel1.Text += "NONE";
                             SNManlabel.Text += "NONE";
                             ManTemplabel.Text += "NONE";
                             ManWetlabel.Text += "NONE";
                             ManBatlabel.Text += "NONE";
 
-                            Manlabel1.ForeColor = Color.Red;
+                           // Manlabel1.ForeColor = Color.Red;
                             SNManlabel.ForeColor = Color.Red;
                             ManTemplabel.ForeColor = Color.Red;
                             ManWetlabel.ForeColor = Color.Red;
@@ -1969,22 +1969,22 @@ namespace ClimateMonitoring
 
                         BatTeplabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Teplabel1.Text = null;
+                           // Teplabel1.Text = null;
                             SNTeplabel.Text = null;
                             TempTeplabel.Text = null;
                             WetTeplabel.Text = null;
                             BatTeplabel.Text = null;
 
-                            Teplabel1.Text += "NONE";
+                           // Teplabel1.Text += "NONE";
                             SNTeplabel.Text += "NONE";
                             TempTeplabel.Text += "NONE";
                             WetTeplabel.Text += "NONE";
                             BatTeplabel.Text += "NONE";
 
-                            Teplabel1.ForeColor = Color.Red;
+                           // Teplabel1.ForeColor = Color.Red;
                             SNTeplabel.ForeColor = Color.Red;
                             TempTeplabel.ForeColor = Color.Red;
                             WetTeplabel.ForeColor = Color.Red;
@@ -2061,22 +2061,22 @@ namespace ClimateMonitoring
 
                         BatTeplabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Teplabel1.Text = null;
+                           // Teplabel1.Text = null;
                             SNTeplabel.Text = null;
                             TempTeplabel.Text = null;
                             WetTeplabel.Text = null;
                             BatTeplabel.Text = null;
 
-                            Teplabel1.Text += "NONE";
+                           // Teplabel1.Text += "NONE";
                             SNTeplabel.Text += "NONE";
                             TempTeplabel.Text += "NONE";
                             WetTeplabel.Text += "NONE";
                             BatTeplabel.Text += "NONE";
 
-                            Teplabel1.ForeColor = Color.Red;
+                           // Teplabel1.ForeColor = Color.Red;
                             SNTeplabel.ForeColor = Color.Red;
                             TempTeplabel.ForeColor = Color.Red;
                             WetTeplabel.ForeColor = Color.Red;
@@ -2160,22 +2160,22 @@ namespace ClimateMonitoring
 
                         BatPrilabel.Text += s4 + " V";
 
-                        DateTime check_status = DateTime.Now.AddDays(-3);
+                        DateTime check_status = DateTime.Now.AddDays(-1);
                         if (check_status > date_last_update)
                         {
-                            Prilabel1.Text = null;
+                           // Prilabel1.Text = null;
                             SNPrilabel.Text = null;
                             TempPrilabel.Text = null;
                             WetPrilabel.Text = null;
                             BatPrilabel.Text = null;
 
-                            Prilabel1.Text += "NONE";
+                           // Prilabel1.Text += "NONE";
                             SNPrilabel.Text += "NONE";
                             TempPrilabel.Text += "NONE";
                             WetPrilabel.Text += "NONE";
                             BatPrilabel.Text += "NONE";
 
-                            Prilabel1.ForeColor = Color.Red;
+                           // Prilabel1.ForeColor = Color.Red;
                             SNPrilabel.ForeColor = Color.Red;
                             TempPrilabel.ForeColor = Color.Red;
                             WetPrilabel.ForeColor = Color.Red;
@@ -2303,22 +2303,22 @@ namespace ClimateMonitoring
 
                             ElBatlabel.Text += s4 + " V";// reader["battery"];
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                ELlabel1.Text = null;
+                               // ELlabel1.Text = null;
                                 SNELlabel.Text = null;
                                 ElTemplabel.Text = null;
                                 ElWetlabel.Text = null;
                                 ElBatlabel.Text = null;
 
-                                ELlabel1.Text += "NONE";
+                                //ELlabel1.Text += "NONE";
                                 SNELlabel.Text += "NONE";
                                 ElTemplabel.Text += "NONE";
                                 ElWetlabel.Text += "NONE";
                                 ElBatlabel.Text += "NONE";
 
-                                ELlabel1.ForeColor = Color.Red;
+                               //ELlabel1.ForeColor = Color.Red;
                                 SNELlabel.ForeColor = Color.Red;
                                 ElTemplabel.ForeColor = Color.Red;
                                 ElWetlabel.ForeColor = Color.Red;
@@ -2393,22 +2393,22 @@ namespace ClimateMonitoring
                             String s4 = s3.Substring(0, 4);
                             FizhimBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Fizhimlabel1.Text = null;
+                               // Fizhimlabel1.Text = null;
                                 SNFizhimlabel.Text = null;
                                 FizhimTemplabel.Text = null;
                                 FizhimWetlabel.Text = null;
                                 FizhimBatlabel.Text = null;
 
-                                Fizhimlabel1.Text += "NONE";
+                               // Fizhimlabel1.Text += "NONE";
                                 SNFizhimlabel.Text += "NONE";
                                 FizhimTemplabel.Text += "NONE";
                                 FizhimWetlabel.Text += "NONE";
                                 FizhimBatlabel.Text += "NONE";
 
-                                Fizhimlabel1.ForeColor = Color.Red;
+                               // Fizhimlabel1.ForeColor = Color.Red;
                                 SNFizhimlabel.ForeColor = Color.Red;
                                 FizhimTemplabel.ForeColor = Color.Red;
                                 FizhimWetlabel.ForeColor = Color.Red;
@@ -2484,22 +2484,22 @@ namespace ClimateMonitoring
 
                             PodBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Podlabel1.Text = null;
+                                //Podlabel1.Text = null;
                                 SNPodlabel.Text = null;
                                 PodTemplabel.Text = null;
                                 PodWetlabel.Text = null;
                                 PodBatlabel.Text = null;
 
-                                Podlabel1.Text += "NONE";
+                               // Podlabel1.Text += "NONE";
                                 SNPodlabel.Text += "NONE";
                                 PodTemplabel.Text += "NONE";
                                 PodWetlabel.Text += "NONE";
                                 PodBatlabel.Text += "NONE";
 
-                                Podlabel1.ForeColor = Color.Red;
+                               // Podlabel1.ForeColor = Color.Red;
                                 SNPodlabel.ForeColor = Color.Red;
                                 PodTemplabel.ForeColor = Color.Red;
                                 PodWetlabel.ForeColor = Color.Red;
@@ -2581,22 +2581,22 @@ namespace ClimateMonitoring
 
                             ManBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Manlabel1.Text = null;
+                               // Manlabel1.Text = null;
                                 SNManlabel.Text = null;
                                 ManTemplabel.Text = null;
                                 ManWetlabel.Text = null;
                                 ManBatlabel.Text = null;
 
-                                Manlabel1.Text += "NONE";
+                              //  Manlabel1.Text += "NONE";
                                 SNManlabel.Text += "NONE";
                                 ManTemplabel.Text += "NONE";
                                 ManWetlabel.Text += "NONE";
                                 ManBatlabel.Text += "NONE";
 
-                                Manlabel1.ForeColor = Color.Red;
+                              //  Manlabel1.ForeColor = Color.Red;
                                 SNManlabel.ForeColor = Color.Red;
                                 ManTemplabel.ForeColor = Color.Red;
                                 ManWetlabel.ForeColor = Color.Red;
@@ -2673,22 +2673,22 @@ namespace ClimateMonitoring
 
                             BatTeplabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Teplabel1.Text = null;
+                              //  Teplabel1.Text = null;
                                 SNTeplabel.Text = null;
                                 TempTeplabel.Text = null;
                                 WetTeplabel.Text = null;
                                 BatTeplabel.Text = null;
 
-                                Teplabel1.Text += "NONE";
+                             //   Teplabel1.Text += "NONE";
                                 SNTeplabel.Text += "NONE";
                                 TempTeplabel.Text += "NONE";
                                 WetTeplabel.Text += "NONE";
                                 BatTeplabel.Text += "NONE";
 
-                                Teplabel1.ForeColor = Color.Red;
+                              //  Teplabel1.ForeColor = Color.Red;
                                 SNTeplabel.ForeColor = Color.Red;
                                 TempTeplabel.ForeColor = Color.Red;
                                 WetTeplabel.ForeColor = Color.Red;
@@ -2750,6 +2750,12 @@ namespace ClimateMonitoring
                             ElWetlabel.Text = null;
                             ElBatlabel.Text = null;
 
+                            ELlabel1.ForeColor = Color.Black;
+                            SNELlabel.ForeColor = Color.Black;
+                            ElTemplabel.ForeColor = Color.Green;
+                            ElWetlabel.ForeColor = Color.Green;
+                            ElBatlabel.ForeColor = Color.Black;
+
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
 
@@ -2808,22 +2814,22 @@ namespace ClimateMonitoring
 
                             ElBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                ELlabel1.Text = null;
+                               // ELlabel1.Text = null;
                                 SNELlabel.Text = null;
                                 ElTemplabel.Text = null;
                                 ElWetlabel.Text = null;
                                 ElBatlabel.Text = null;
 
-                                ELlabel1.Text += "NONE";
+                               // ELlabel1.Text += "NONE";
                                 SNELlabel.Text += "NONE";
                                 ElTemplabel.Text += "NONE";
                                 ElWetlabel.Text += "NONE";
                                 ElBatlabel.Text += "NONE";
 
-                                ELlabel1.ForeColor = Color.Red;
+                               // ELlabel1.ForeColor = Color.Red;
                                 SNELlabel.ForeColor = Color.Red;
                                 ElTemplabel.ForeColor = Color.Red;
                                 ElWetlabel.ForeColor = Color.Red;
@@ -2841,6 +2847,12 @@ namespace ClimateMonitoring
                             FizhimTemplabel.Text = null;
                             FizhimWetlabel.Text = null;
                             FizhimBatlabel.Text = null;
+
+                            Fizhimlabel1.ForeColor = Color.Black;
+                            SNFizhimlabel.ForeColor = Color.Black;
+                            FizhimTemplabel.ForeColor = Color.Green;
+                            FizhimWetlabel.ForeColor = Color.Green;
+                            FizhimBatlabel.ForeColor = Color.Black;
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -2900,22 +2912,22 @@ namespace ClimateMonitoring
                             String s4 = s3.Substring(0, 4);
                             FizhimBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Fizhimlabel1.Text = null;
+                              //  Fizhimlabel1.Text = null;
                                 SNFizhimlabel.Text = null;
                                 FizhimTemplabel.Text = null;
                                 FizhimWetlabel.Text = null;
                                 FizhimBatlabel.Text = null;
 
-                                Fizhimlabel1.Text += "NONE";
+                               // Fizhimlabel1.Text += "NONE";
                                 SNFizhimlabel.Text += "NONE";
                                 FizhimTemplabel.Text += "NONE";
                                 FizhimWetlabel.Text += "NONE";
                                 FizhimBatlabel.Text += "NONE";
 
-                                Fizhimlabel1.ForeColor = Color.Red;
+                               // Fizhimlabel1.ForeColor = Color.Red;
                                 SNFizhimlabel.ForeColor = Color.Red;
                                 FizhimTemplabel.ForeColor = Color.Red;
                                 FizhimWetlabel.ForeColor = Color.Red;
@@ -2932,6 +2944,12 @@ namespace ClimateMonitoring
                             PodTemplabel.Text = null;
                             PodWetlabel.Text = null;
                             PodBatlabel.Text = null;
+
+                            Podlabel1.ForeColor = Color.Black;
+                            SNPodlabel.ForeColor = Color.Black;
+                            PodTemplabel.ForeColor = Color.Green;
+                            PodWetlabel.ForeColor = Color.Green;
+                            PodBatlabel.ForeColor = Color.Black;
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -2991,22 +3009,22 @@ namespace ClimateMonitoring
 
                             PodBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Podlabel1.Text = null;
+                               // Podlabel1.Text = null;
                                 SNPodlabel.Text = null;
                                 PodTemplabel.Text = null;
                                 PodWetlabel.Text = null;
                                 PodBatlabel.Text = null;
 
-                                Podlabel1.Text += "NONE";
+                              //  Podlabel1.Text += "NONE";
                                 SNPodlabel.Text += "NONE";
                                 PodTemplabel.Text += "NONE";
                                 PodWetlabel.Text += "NONE";
                                 PodBatlabel.Text += "NONE";
 
-                                Podlabel1.ForeColor = Color.Red;
+                               // Podlabel1.ForeColor = Color.Red;
                                 SNPodlabel.ForeColor = Color.Red;
                                 PodTemplabel.ForeColor = Color.Red;
                                 PodWetlabel.ForeColor = Color.Red;
@@ -3023,6 +3041,12 @@ namespace ClimateMonitoring
                             ManTemplabel.Text = null;
                             ManWetlabel.Text = null;
                             ManBatlabel.Text = null;
+
+                            Manlabel1.ForeColor = Color.Black;
+                            SNManlabel.ForeColor = Color.Black;
+                            ManTemplabel.ForeColor = Color.Green;
+                            ManWetlabel.ForeColor = Color.Green;
+                            ManBatlabel.ForeColor = Color.Black;
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -3082,22 +3106,22 @@ namespace ClimateMonitoring
 
                             ManBatlabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Manlabel1.Text = null;
+                              //  Manlabel1.Text = null;
                                 SNManlabel.Text = null;
                                 ManTemplabel.Text = null;
                                 ManWetlabel.Text = null;
                                 ManBatlabel.Text = null;
 
-                                Manlabel1.Text += "NONE";
+                               // Manlabel1.Text += "NONE";
                                 SNManlabel.Text += "NONE";
                                 ManTemplabel.Text += "NONE";
                                 ManWetlabel.Text += "NONE";
                                 ManBatlabel.Text += "NONE";
 
-                                Manlabel1.ForeColor = Color.Red;
+                               // Manlabel1.ForeColor = Color.Red;
                                 SNManlabel.ForeColor = Color.Red;
                                 ManTemplabel.ForeColor = Color.Red;
                                 ManWetlabel.ForeColor = Color.Red;
@@ -3114,6 +3138,12 @@ namespace ClimateMonitoring
                             TempTeplabel.Text = null;
                             WetTeplabel.Text = null;
                             BatTeplabel.Text = null;
+
+                            Teplabel1.ForeColor = Color.Black;
+                            SNTeplabel.ForeColor = Color.Black;
+                            TempTeplabel.ForeColor = Color.Green;
+                            WetTeplabel.ForeColor = Color.Green;
+                            BatTeplabel.ForeColor = Color.Black;
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -3173,22 +3203,22 @@ namespace ClimateMonitoring
 
                             BatTeplabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Teplabel1.Text = null;
+                               // Teplabel1.Text = null;
                                 SNTeplabel.Text = null;
                                 TempTeplabel.Text = null;
                                 WetTeplabel.Text = null;
                                 BatTeplabel.Text = null;
 
-                                Teplabel1.Text += "NONE";
+                               // Teplabel1.Text += "NONE";
                                 SNTeplabel.Text += "NONE";
                                 TempTeplabel.Text += "NONE";
                                 WetTeplabel.Text += "NONE";
                                 BatTeplabel.Text += "NONE";
 
-                                Teplabel1.ForeColor = Color.Red;
+                               // Teplabel1.ForeColor = Color.Red;
                                 SNTeplabel.ForeColor = Color.Red;
                                 TempTeplabel.ForeColor = Color.Red;
                                 WetTeplabel.ForeColor = Color.Red;
@@ -3206,6 +3236,12 @@ namespace ClimateMonitoring
                             TempPrilabel.Text = null;
                             WetPrilabel.Text = null;
                             BatPrilabel.Text = null;
+
+                            Prilabel1.ForeColor = Color.Black;
+                            SNPrilabel.ForeColor = Color.Black;
+                            TempPrilabel.ForeColor = Color.Green;
+                            WetPrilabel.ForeColor = Color.Green;
+                            BatPrilabel.ForeColor = Color.Black;
 
                             String s = reader["EUI64"].ToString();
                             String s2 = s.Substring(s.Length - 7);
@@ -3272,22 +3308,22 @@ namespace ClimateMonitoring
 
                             BatPrilabel.Text += s4 + " V";
 
-                            DateTime check_status = DateTime.Now.AddDays(-3);
+                            DateTime check_status = DateTime.Now.AddDays(-1);
                             if (check_status > date_last_update)
                             {
-                                Prilabel1.Text = null;
+                              //  Prilabel1.Text = null;
                                 SNPrilabel.Text = null;
                                 TempPrilabel.Text = null;
                                 WetPrilabel.Text = null;
                                 BatPrilabel.Text = null;
 
-                                Prilabel1.Text += "NONE";
+                                ///Prilabel1.Text += "NONE";
                                 SNPrilabel.Text += "NONE";
                                 TempPrilabel.Text += "NONE";
                                 WetPrilabel.Text += "NONE";
                                 BatPrilabel.Text += "NONE";
 
-                                Prilabel1.ForeColor = Color.Red;
+                               // Prilabel1.ForeColor = Color.Red;
                                 SNPrilabel.ForeColor = Color.Red;
                                 TempPrilabel.ForeColor = Color.Red;
                                 WetPrilabel.ForeColor = Color.Red;
@@ -3445,7 +3481,7 @@ namespace ClimateMonitoring
         {
             if (string.IsNullOrEmpty(combo_otch_datchik.Text))
             {
-                MessageBox.Show("Не выбран датчик для создания отчета");
+                MessageBox.Show("Не выбран датчик для создания отчёта","Ошибка создания отчёта");
             }
             else
             {
@@ -3489,16 +3525,20 @@ namespace ClimateMonitoring
                     {
                         while (reader.Read())
                         {
+                            int timestamp = Convert.ToInt32(reader["timemeasure"]);
+                            DateTime date_last_update = new DateTime(1970, 1, 1).AddSeconds(timestamp);
+
                             ViewGrid_main.Rows.Add(new object[]
                             {
                                 reader.GetValue(reader.GetOrdinal("sensor_id")),
-                                reader.GetValue(reader.GetOrdinal("timemeasure")),
+                                date_last_update.ToString(),
+                               // reader.GetValue(reader.GetOrdinal("timemeasure")),
                                 reader.GetValue(reader.GetOrdinal("temperature")),
                                 reader.GetValue(reader.GetOrdinal("wetness")),
                                 reader.GetValue(reader.GetOrdinal("battery")),
                                 reader.GetValue(reader.GetOrdinal("name")),
                                 reader.GetValue(reader.GetOrdinal("EUI64"))
-                            });
+                            }); 
                         }
                     }
 
